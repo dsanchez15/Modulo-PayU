@@ -1,11 +1,13 @@
 package co.negocio.interfaces;
 
+import com.payu.sdk.model.TransactionResponse;
+
 import co.dto.Pago;
 import co.excepciones.ExcepcionesPayU;
 
 public interface PagosNgcInt {
-	public void pagoXTarjetaCredito(Pago pago) throws ExcepcionesPayU;
-	public void pagoXPSE() throws ExcepcionesPayU;
-	public void pagoXBalotoEfecty() throws ExcepcionesPayU;
+	public TransactionResponse pagoXTarjetaCredito(Pago pago) throws ExcepcionesPayU;
+	public void pagoXPSE(Pago pago) throws ExcepcionesPayU;
+	public void pagoXBalotoEfecty(Pago pago) throws ExcepcionesPayU;
 	
 }
