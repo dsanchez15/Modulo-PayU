@@ -10,14 +10,19 @@ import com.payu.sdk.exceptions.InvalidParametersException;
 import com.payu.sdk.exceptions.PayUException;
 import com.payu.sdk.model.TransactionResponse;
 
-import co.dto.Pago;
+import co.dto.PagoDto;
 import co.excepciones.ExcepcionesPayU;
-import co.negocio.interfaces.PagosNgcInt;
+import co.payU.interfaces.IPagos;
 
-public class Pagos implements PagosNgcInt {
+/**
+ * @author Duvan A. Sanchez
+ * @version 1.0.0
+ * 27 de jun. de 2016 10:47:04
+ */
+public class PagosPayU implements IPagos {
 
 	@Override
-	public TransactionResponse pagoXTarjetaCredito(Pago pago) throws ExcepcionesPayU {
+	public TransactionResponse pagoXTarjetaCredito(PagoDto pago) throws ExcepcionesPayU {
 
 		Map<String, String> parametros = new HashMap<String, String>();
 
@@ -118,7 +123,7 @@ public class Pagos implements PagosNgcInt {
 	}
 
 	@Override
-	public void pagoXPSE(Pago pago) throws ExcepcionesPayU {
+	public TransactionResponse pagoXPSE(PagoDto pago) throws ExcepcionesPayU {
 		
 		Map<String, String> parametros = new HashMap<String, String>();
 
@@ -144,101 +149,108 @@ public class Pagos implements PagosNgcInt {
 		parametros.put(PayU.PARAMETERS.PAYER_NAME, pago.getDsPayerName());
 			
 		//Ingrese aquí el nombre del medio de pago en efectivo
-		parameters.put(PayU.PARAMETERS.PAYMENT_METHOD, "BALOTO");
+		parametros.put(PayU.PARAMETERS.PAYMENT_METHOD, pago.getDsPaymentMethod());
 
 		//Ingrese aquí el nombre del pais.
 		parametros.put(PayU.PARAMETERS.COUNTRY, pago.getDsCountry());
 
 		//Ingrese aquí la fecha de expiración. 
-		parameters.put(PayU.PARAMETERS.EXPIRATION_DATE,"2014-05-20T00:00:00");
+		parametros.put(PayU.PARAMETERS.EXPIRATION_DATE,pago.getDsExpirationDate());
 
 		//IP del pagadador
 		parametros.put(PayU.PARAMETERS.IP_ADDRESS, pago.getDsIPAddress());
 
+		TransactionResponse response = null;
 		//Solicitud de autorización y captura
-		TransactionResponse response = PayUPayments.doAuthorizationAndCapture(parametros);
+		try {
+			response = PayUPayments.doAuthorizationAndCapture(parametros);
+		} catch (PayUException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (InvalidParametersException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (ConnectionException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return response;
 	}
 
 	@Override
-	public void pagoXBalotoEfecty(Pago pago) throws ExcepcionesPayU {
+	public TransactionResponse pagoXBalotoEfecty(PagoDto pago) throws ExcepcionesPayU {
 		
 		Map<String, String> parameters = new HashMap<String, String>();
 
 		//Ingrese aquí el identificador de la cuenta.
-		parameters.put(PayU.PARAMETERS.ACCOUNT_ID, "512321");
+		parameters.put(PayU.PARAMETERS.ACCOUNT_ID, pago.getDsAccountId());
 		//Ingrese aquí el código de referencia.
-		parameters.put(PayU.PARAMETERS.REFERENCE_CODE, ""+reference);
+		parameters.put(PayU.PARAMETERS.REFERENCE_CODE, pago.getDsReferenceCode());
 		//Ingrese aquí la descripción.
-		parameters.put(PayU.PARAMETERS.DESCRIPTION, "payment test");
+		parameters.put(PayU.PARAMETERS.DESCRIPTION, pago.getDsDescription());
 		//Ingrese aquí el idima de la orden.
-		parameters.put(PayU.PARAMETERS.LANGUAGE, "Language.es");
+		parameters.put(PayU.PARAMETERS.LANGUAGE, pago.getDsLanguage());
 
 		// -- Valores --
 		//Ingrese aquí el valor.
-		parameters.put(PayU.PARAMETERS.VALUE, ""+value);	
+		parameters.put(PayU.PARAMETERS.VALUE, pago.getDsValue());	
 		//Ingrese aquí la moneda.
-		parameters.put(PayU.PARAMETERS.CURRENCY, ""+Currency.COP.name());
+		parameters.put(PayU.PARAMETERS.CURRENCY, pago.getDsCurrency());
 
 		//Ingrese aquí el email del comprador.
-		parameters.put(PayU.PARAMETERS.BUYER_EMAIL, "buyer_test@test.com");
+		parameters.put(PayU.PARAMETERS.BUYER_EMAIL, pago.getDsBuyerEmail());
 
 		// -- pagador --
 		//Ingrese aquí el nombre del pagador.
-		parameters.put(PayU.PARAMETERS.PAYER_NAME, "First name and second payer name");
+		parameters.put(PayU.PARAMETERS.PAYER_NAME, pago.getDsPayerName());
 		//Ingrese aquí el email del pagador.
-		parameters.put(PayU.PARAMETERS.PAYER_EMAIL, "payer_test@test.com");
+		parameters.put(PayU.PARAMETERS.PAYER_EMAIL, pago.getDsPayerEmail());
 		//Ingrese aquí el teléfono de contacto del pagador.
-		parameters.put(PayU.PARAMETERS.PAYER_CONTACT_PHONE, "7563126");	
+		parameters.put(PayU.PARAMETERS.PAYER_CONTACT_PHONE, pago.getDsPayerContactPhone());	
 
 		// -- infarmación obligatoria para PSE --
 		//Ingrese aquí el código pse del banco.
 		parameters.put(PayU.PARAMETERS.PSE_FINANCIAL_INSTITUTION_CODE, "1007");
 		//Ingrese aquí el tipo de persona (natural o jurídica)
-		parameters.put(PayU.PARAMETERS.PAYER_PERSON_TYPE, PersonType.NATURAL.toString() );	
+		parameters.put(PayU.PARAMETERS.PAYER_PERSON_TYPE, pago.getDsPayerPersonType() );	
 		//o parameters.put(PayU.PARAMETERS.PAYER_PERSON_TYPE, PersonType.LEGAL.toString() );	
 		//Ingrese aquí el documento de contacto del pagador.
-		parameters.put(PayU.PARAMETERS.PAYER_DNI, "123456789");	
+		parameters.put(PayU.PARAMETERS.PAYER_DNI, pago.getDsPayerDNI());	
 		//Ingrese aquí el tipo de documento del pagador.
-		parameters.put(PayU.PARAMETERS.PAYER_DOCUMENT_TYPE, DocumentType.CC.toString());
+		parameters.put(PayU.PARAMETERS.PAYER_DOCUMENT_TYPE, pago.getDsPayerDocumentType());
 		//IP del pagadador
-		parameters.put(PayU.PARAMETERS.IP_ADDRESS, "127.0.0.1");
+		parameters.put(PayU.PARAMETERS.IP_ADDRESS, pago.getDsIPAddress());
 
 		//Ingrese aquí el nombre del medio de pago
-		parameters.put(PayU.PARAMETERS.PAYMENT_METHOD, "PSE");
+		parameters.put(PayU.PARAMETERS.PAYMENT_METHOD, pago.getDsPaymentMethod());
 
 		//Ingrese aquí el nombre del pais.
-		parameters.put(PayU.PARAMETERS.COUNTRY, PaymentCountry.CO.name());
+		parameters.put(PayU.PARAMETERS.COUNTRY, pago.getDsCountry());
 
 		//Cookie de la sesión actual.
-		parameters.put(PayU.PARAMETERS.COOKIE, "pt1t38347bs6jc9ruv2ecpv7o2");
+		parameters.put(PayU.PARAMETERS.COOKIE, pago.getDsCookie());
 		//Cookie de la sesión actual.
-		parameters.put(PayU.PARAMETERS.USER_AGENT, "Mozilla/5.0 (Windows NT 5.1; rv:18.0) Gecko/20100101 Firefox/18.0");
+		parameters.put(PayU.PARAMETERS.USER_AGENT, pago.getDsUserAgent());
 
 		//Página de respuesta a la cual será redirigido el pagador.
-		parameters.put(PayU.PARAMETERS.RESPONSE_URL, "http://www.test.com/response");
+		parameters.put(PayU.PARAMETERS.RESPONSE_URL, pago.getDsResponseUrl());
 
 		//Solicitud de autorización y captura
-		TransactionResponse response = PayUPayments.doAuthorizationAndCapture(parameters);
-
-		//Respuesta
-		if(response != null){
-			response.getOrderId();
-			response.getTransactionId();
-			response.getState();
-			if(response.getState().equals(TransactionState.PENDING)){
-				response.getPendingReason();	
-				Map extraParameters = response.getExtraParameters();
-				
-				//obtener la url del banco
-				String url=(String)extraParameters.get("BANK_URL");
-							
-			}
-			response.getPaymentNetworkResponseCode();
-			response.getPaymentNetworkResponseErrorMessage();
-			response.getTrazabilityCode();
-			response.getResponseCode();
-			response.getResponseMessage();
+		TransactionResponse response = null;
+		try {
+			response = PayUPayments.doAuthorizationAndCapture(parameters);
+		} catch (PayUException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (InvalidParametersException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (ConnectionException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
+		return response;
+
 	}
 
 }
