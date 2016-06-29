@@ -10,17 +10,22 @@ import com.payu.sdk.exceptions.InvalidParametersException;
 import com.payu.sdk.exceptions.PayUException;
 import com.payu.sdk.model.TransactionResponse;
 
-import co.dto.PagoDto;
 import co.excepciones.ExcepcionesPayU;
+import co.payU.dto.PagoDto;
 import co.payU.interfaces.IPagos;
 
 /**
+ * The Class PagosPayU.
+ *
  * @author Duvan A. Sanchez
  * @version 1.0.0
  * 27 de jun. de 2016 10:47:04
  */
 public class PagosPayU implements IPagos {
 
+	/* (non-Javadoc)
+	 * @see co.payU.interfaces.IPagos#pagoXTarjetaCredito(co.payU.dto.PagoDto)
+	 */
 	@Override
 	public TransactionResponse pagoXTarjetaCredito(PagoDto pago) throws ExcepcionesPayU {
 
@@ -122,9 +127,12 @@ public class PagosPayU implements IPagos {
 		return response;
 	}
 
+	/* (non-Javadoc)
+	 * @see co.payU.interfaces.IPagos#pagoXPSE(co.payU.dto.PagoDto)
+	 */
 	@Override
 	public TransactionResponse pagoXPSE(PagoDto pago) throws ExcepcionesPayU {
-		
+
 		Map<String, String> parametros = new HashMap<String, String>();
 
 		//Ingrese aquí el identificador de la cuenta.
@@ -147,7 +155,7 @@ public class PagosPayU implements IPagos {
 
 		//Ingrese aquí el nombre del pagador.
 		parametros.put(PayU.PARAMETERS.PAYER_NAME, pago.getDsPayerName());
-			
+
 		//Ingrese aquí el nombre del medio de pago en efectivo
 		parametros.put(PayU.PARAMETERS.PAYMENT_METHOD, pago.getDsPaymentMethod());
 
@@ -177,9 +185,12 @@ public class PagosPayU implements IPagos {
 		return response;
 	}
 
+	/* (non-Javadoc)
+	 * @see co.payU.interfaces.IPagos#pagoXBalotoEfecty(co.payU.dto.PagoDto)
+	 */
 	@Override
 	public TransactionResponse pagoXBalotoEfecty(PagoDto pago) throws ExcepcionesPayU {
-		
+
 		Map<String, String> parameters = new HashMap<String, String>();
 
 		//Ingrese aquí el identificador de la cuenta.

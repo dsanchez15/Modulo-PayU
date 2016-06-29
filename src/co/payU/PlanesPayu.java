@@ -13,11 +13,13 @@ import com.payu.sdk.exceptions.InvalidParametersException;
 import com.payu.sdk.exceptions.PayUException;
 import com.payu.sdk.paymentplan.model.SubscriptionPlan;
 
-import co.dto.PlanDto;
 import co.excepciones.ExcepcionesPayU;
+import co.payU.dto.PlanDto;
 import co.payU.interfaces.IPlanes;
 
 /**
+ * The Class PlanesPayu.
+ *
  * @author Duvan A. Sanchez
  * @version 1.0.0
  * 27 de jun. de 2016 14:31:31
@@ -29,7 +31,7 @@ public class PlanesPayu implements IPlanes {
 	 */
 	@Override
 	public SubscriptionPlan createPlan(PlanDto plan) throws ExcepcionesPayU {
-		
+
 		Map<String, String> parameters = new HashMap<String, String>();
 		// Ingresa aquí la descripción del plan
 		parameters.put(PayU.PARAMETERS.PLAN_DESCRIPTION, plan.getDsPlanDescription());
@@ -71,7 +73,7 @@ public class PlanesPayu implements IPlanes {
 	 */
 	@Override
 	public SubscriptionPlan updatePlan(PlanDto plan) throws ExcepcionesPayU {
-		
+
 		Map<String, String> parameters = new HashMap<String, String>();
 		// Ingrese aquí la nueva descripción para el plan
 		parameters.put(PayU.PARAMETERS.PLAN_DESCRIPTION, plan.getDsPlanDescription());

@@ -14,16 +14,22 @@ import com.payu.sdk.model.TransactionResponse;
 
 import co.excepciones.ExcepcionesPayU;
 import co.payU.interfaces.IConsultas;
+
 /**
+ * The Class ConsultasPayU.
+ *
  * @author Duvan A. Sanchez
  * @version 1.0.0
  * 27 de jun. de 2016 10:47:38
  */
 public class ConsultasPayU implements IConsultas{
 
+	/* (non-Javadoc)
+	 * @see co.payU.interfaces.IConsultas#ordenXIdentificacion(java.lang.String)
+	 */
 	@Override
 	public Order ordenXIdentificacion(String orderId) throws ExcepcionesPayU {
-		
+
 		Map<String, String> parameters = new HashMap<String, String>();
 
 		// Ingresa aquí el código de referencia de la orden.
@@ -45,13 +51,16 @@ public class ConsultasPayU implements IConsultas{
 		return response;
 	}
 
+	/* (non-Javadoc)
+	 * @see co.payU.interfaces.IConsultas#ordenXReferencia(java.lang.String)
+	 */
 	@Override
 	public List<Order> ordenXReferencia(String referenceCode) throws ExcepcionesPayU {
 		Map<String, String> parameters = new HashMap<String, String>();
 
 		//Ingresa aquí el código de referencia de la orden.
 		parameters.put(PayU.PARAMETERS.REFERENCE_CODE, referenceCode);
-		
+
 		List<Order> orders_response = null;
 		try {
 			orders_response = PayUReports.getOrderDetailByReferenceCode(parameters);
@@ -68,6 +77,9 @@ public class ConsultasPayU implements IConsultas{
 		return orders_response;
 	}
 
+	/* (non-Javadoc)
+	 * @see co.payU.interfaces.IConsultas#respuestaTransaccion(java.lang.String)
+	 */
 	@Override
 	public TransactionResponse respuestaTransaccion(String transactionId) throws ExcepcionesPayU {
 		Map<String, String> parameters = new HashMap<String, String>();
