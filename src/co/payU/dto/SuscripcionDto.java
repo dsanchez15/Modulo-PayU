@@ -12,697 +12,697 @@ package co.payU.dto;
  */
 public class SuscripcionDto {
 
-	/** The ds installments number. */
-	private String dsInstallmentsNumber;
+	/** The str installments number. */
+	private String strInstallmentsNumber;
 
-	/** The ds trial days. */
-	private String dsTrialDays;
+	/** The str trial days. */
+	private String strTrialDays;
 
-	/** The ds customer name. */
-	private String dsCustomerName;
+	/** The str customer name. */
+	private String strCustomerName;
 
-	/** The ds customer email. */
-	private String dsCustomerEmail;
+	/** The str customer email. */
+	private String strCustomerEmail;
 
-	/** The ds payer name. */
-	private String dsPayerName;
+	/** The str payer name. */
+	private String strPayerName;
 
-	/** The ds credit card number. */
-	private String dsCreditCardNumber;
+	/** The str credit card number. */
+	private String strCreditCardNumber;
 
-	/** The ds credit card expiration date. */
-	private String dsCreditCardExpirationDate;
+	/** The str credit card expiration date. */
+	private String strCreditCardExpirationDate;
 
-	/** The ds payment method. */
-	private String dsPaymentMethod;
+	/** The str payment method. */
+	private String strPaymentMethod;
 
-	/** The ds credit card document. */
-	private String dsCreditCardDocument;
+	/** The str credit card document. */
+	private String strCreditCardDocument;
 
-	/** The ds payer DNI. */
-	private String dsPayerDNI;
+	/** The str payer DNI. */
+	private String strPayerDNI;
 
-	/** The ds payer street. */
-	private String dsPayerStreet;
+	/** The str payer street. */
+	private String strPayerStreet;
 
-	/** The ds payer street 2. */
-	private String dsPayerStreet2;
+	/** The str payer street 2. */
+	private String strPayerStreet2;
 
-	/** The ds payer street 3. */
-	private String dsPayerStreet3;
+	/** The str payer street 3. */
+	private String strPayerStreet3;
 
-	/** The ds city. */
-	private String dsCity;
+	/** The str city. */
+	private String strCity;
 
-	/** The ds state. */
-	private String dsState;
+	/** The str state. */
+	private String strState;
 
-	/** The ds country. */
-	private String dsCountry;
+	/** The str country. */
+	private String strCountry;
 
-	/** The ds postal code. */
-	private String dsPostalCode;
+	/** The str postal code. */
+	private String strPostalCode;
 
-	/** The ds payer phone. */
-	private String dsPayerPhone;
+	/** The str payer phone. */
+	private String strPayerPhone;
 
-	/** The ds plan description. */
-	private String dsPlanDescription;
+	/** The str plan description. */
+	private String strPlanDescription;
 
-	/** The ds plan code. */
-	private String dsPlanCode;
+	/** The str plan code. */
+	private String strPlanCode;
 
-	/** The ds plan interval. */
-	private String dsPlanInterval;
+	/** The str plan interval. */
+	private String strPlanInterval;
 
-	/** The ds plan interval count. */
-	private String dsPlanIntervalCount;
+	/** The str plan interval count. */
+	private String strPlanIntervalCount;
 
-	/** The ds plan currency. */
-	private String dsPlanCurrency;
+	/** The str plan currency. */
+	private String strPlanCurrency;
 
-	/** The ds plan value. */
-	private String dsPlanValue;
+	/** The str plan value. */
+	private String strPlanValue;
 
-	/** The ds plan tax. */
-	private String dsPlanTax;
+	/** The str plan tax. */
+	private String strPlanTax;
 
-	/** The ds plan tax return base. */
-	private String dsPlanTaxReturnBase;
+	/** The str plan tax return base. */
+	private String strPlanTaxReturnBase;
 
-	/** The ds account id. */
-	private String dsAccountId;
+	/** The str account id. */
+	private String strAccountId;
 
-	/** The ds plan attempts delay. */
-	private String dsPlanAttemptsDelay;
+	/** The str plan attempts delay. */
+	private String strPlanAttemptsDelay;
 
-	/** The ds plan max payments. */
-	private String dsPlanMaxPayments;
+	/** The str plan max payments. */
+	private String strPlanMaxPayments;
 
-	/** The ds plan max payments attempts. */
-	private String dsPlanMaxPaymentsAttempts;
+	/** The str plan max payments attempts. */
+	private String strPlanMaxPaymentsAttempts;
 
-	/** The ds plan max pending payments. */
-	private String dsPlanMaxPendingPayments;
+	/** The str plan max pending payments. */
+	private String strPlanMaxPendingPayments;
 
-	/** The ds customer id. */
-	private String dsCustomerId;
+	/** The str customer id. */
+	private String strCustomerId;
 
-	/** The ds token id. */
-	private String dsTokenId;
+	/** The str token id. */
+	private String strTokenId;
 
 	/**
-	 * Gets the ds installments number.
+	 * Gets the str installments number.
 	 *
-	 * @return the dsInstallmentsNumber
+	 * @return the strInstallmentsNumber
 	 */
 	public String getDsInstallmentsNumber() {
-		return dsInstallmentsNumber;
+		return strInstallmentsNumber;
 	}
 
 	/**
-	 * Sets the ds installments number.
+	 * Sets the str installments number.
 	 *
-	 * @param dsInstallmentsNumber the dsInstallmentsNumber to set
+	 * @param strInstallmentsNumber the strInstallmentsNumber to set
 	 */
-	public void setDsInstallmentsNumber(String dsInstallmentsNumber) {
-		this.dsInstallmentsNumber = dsInstallmentsNumber;
+	public void setDsInstallmentsNumber(String strInstallmentsNumber) {
+		this.strInstallmentsNumber = strInstallmentsNumber;
 	}
 
 	/**
-	 * Gets the ds trial days.
+	 * Gets the str trial days.
 	 *
-	 * @return the dsTrialDays
+	 * @return the strTrialDays
 	 */
 	public String getDsTrialDays() {
-		return dsTrialDays;
+		return strTrialDays;
 	}
 
 	/**
-	 * Sets the ds trial days.
+	 * Sets the str trial days.
 	 *
-	 * @param dsTrialDays the dsTrialDays to set
+	 * @param strTrialDays the strTrialDays to set
 	 */
-	public void setDsTrialDays(String dsTrialDays) {
-		this.dsTrialDays = dsTrialDays;
+	public void setDsTrialDays(String strTrialDays) {
+		this.strTrialDays = strTrialDays;
 	}
 
 	/**
-	 * Gets the ds customer name.
+	 * Gets the str customer name.
 	 *
-	 * @return the dsCustomerName
+	 * @return the strCustomerName
 	 */
 	public String getDsCustomerName() {
-		return dsCustomerName;
+		return strCustomerName;
 	}
 
 	/**
-	 * Sets the ds customer name.
+	 * Sets the str customer name.
 	 *
-	 * @param dsCustomerName the dsCustomerName to set
+	 * @param strCustomerName the strCustomerName to set
 	 */
-	public void setDsCustomerName(String dsCustomerName) {
-		this.dsCustomerName = dsCustomerName;
+	public void setDsCustomerName(String strCustomerName) {
+		this.strCustomerName = strCustomerName;
 	}
 
 	/**
-	 * Gets the ds customer email.
+	 * Gets the str customer email.
 	 *
-	 * @return the dsCustomerEmail
+	 * @return the strCustomerEmail
 	 */
 	public String getDsCustomerEmail() {
-		return dsCustomerEmail;
+		return strCustomerEmail;
 	}
 
 	/**
-	 * Sets the ds customer email.
+	 * Sets the str customer email.
 	 *
-	 * @param dsCustomerEmail the dsCustomerEmail to set
+	 * @param strCustomerEmail the strCustomerEmail to set
 	 */
-	public void setDsCustomerEmail(String dsCustomerEmail) {
-		this.dsCustomerEmail = dsCustomerEmail;
+	public void setDsCustomerEmail(String strCustomerEmail) {
+		this.strCustomerEmail = strCustomerEmail;
 	}
 
 	/**
-	 * Gets the ds payer name.
+	 * Gets the str payer name.
 	 *
-	 * @return the dsPayerName
+	 * @return the strPayerName
 	 */
 	public String getDsPayerName() {
-		return dsPayerName;
+		return strPayerName;
 	}
 
 	/**
-	 * Sets the ds payer name.
+	 * Sets the str payer name.
 	 *
-	 * @param dsPayerName the dsPayerName to set
+	 * @param strPayerName the strPayerName to set
 	 */
-	public void setDsPayerName(String dsPayerName) {
-		this.dsPayerName = dsPayerName;
+	public void setDsPayerName(String strPayerName) {
+		this.strPayerName = strPayerName;
 	}
 
 	/**
-	 * Gets the ds credit card number.
+	 * Gets the str credit card number.
 	 *
-	 * @return the dsCreditCardNumber
+	 * @return the strCreditCardNumber
 	 */
 	public String getDsCreditCardNumber() {
-		return dsCreditCardNumber;
+		return strCreditCardNumber;
 	}
 
 	/**
-	 * Sets the ds credit card number.
+	 * Sets the str credit card number.
 	 *
-	 * @param dsCreditCardNumber the dsCreditCardNumber to set
+	 * @param strCreditCardNumber the strCreditCardNumber to set
 	 */
-	public void setDsCreditCardNumber(String dsCreditCardNumber) {
-		this.dsCreditCardNumber = dsCreditCardNumber;
+	public void setDsCreditCardNumber(String strCreditCardNumber) {
+		this.strCreditCardNumber = strCreditCardNumber;
 	}
 
 	/**
-	 * Gets the ds credit card expiration date.
+	 * Gets the str credit card expiration date.
 	 *
-	 * @return the dsCreditCardExpirationDate
+	 * @return the strCreditCardExpirationDate
 	 */
 	public String getDsCreditCardExpirationDate() {
-		return dsCreditCardExpirationDate;
+		return strCreditCardExpirationDate;
 	}
 
 	/**
-	 * Sets the ds credit card expiration date.
+	 * Sets the str credit card expiration date.
 	 *
-	 * @param dsCreditCardExpirationDate the dsCreditCardExpirationDate to set
+	 * @param strCreditCardExpirationDate the strCreditCardExpirationDate to set
 	 */
-	public void setDsCreditCardExpirationDate(String dsCreditCardExpirationDate) {
-		this.dsCreditCardExpirationDate = dsCreditCardExpirationDate;
+	public void setDsCreditCardExpirationDate(String strCreditCardExpirationDate) {
+		this.strCreditCardExpirationDate = strCreditCardExpirationDate;
 	}
 
 	/**
-	 * Gets the ds payment method.
+	 * Gets the str payment method.
 	 *
-	 * @return the dsPaymentMethod
+	 * @return the strPaymentMethod
 	 */
 	public String getDsPaymentMethod() {
-		return dsPaymentMethod;
+		return strPaymentMethod;
 	}
 
 	/**
-	 * Sets the ds payment method.
+	 * Sets the str payment method.
 	 *
-	 * @param dsPaymentMethod the dsPaymentMethod to set
+	 * @param strPaymentMethod the strPaymentMethod to set
 	 */
-	public void setDsPaymentMethod(String dsPaymentMethod) {
-		this.dsPaymentMethod = dsPaymentMethod;
+	public void setDsPaymentMethod(String strPaymentMethod) {
+		this.strPaymentMethod = strPaymentMethod;
 	}
 
 	/**
-	 * Gets the ds credit card document.
+	 * Gets the str credit card document.
 	 *
-	 * @return the dsCreditCardDocument
+	 * @return the strCreditCardDocument
 	 */
 	public String getDsCreditCardDocument() {
-		return dsCreditCardDocument;
+		return strCreditCardDocument;
 	}
 
 	/**
-	 * Sets the ds credit card document.
+	 * Sets the str credit card document.
 	 *
-	 * @param dsCreditCardDocument the dsCreditCardDocument to set
+	 * @param strCreditCardDocument the strCreditCardDocument to set
 	 */
-	public void setDsCreditCardDocument(String dsCreditCardDocument) {
-		this.dsCreditCardDocument = dsCreditCardDocument;
+	public void setDsCreditCardDocument(String strCreditCardDocument) {
+		this.strCreditCardDocument = strCreditCardDocument;
 	}
 
 	/**
-	 * Gets the ds payer DNI.
+	 * Gets the str payer DNI.
 	 *
-	 * @return the dsPayerDNI
+	 * @return the strPayerDNI
 	 */
 	public String getDsPayerDNI() {
-		return dsPayerDNI;
+		return strPayerDNI;
 	}
 
 	/**
-	 * Sets the ds payer DNI.
+	 * Sets the str payer DNI.
 	 *
-	 * @param dsPayerDNI the dsPayerDNI to set
+	 * @param strPayerDNI the strPayerDNI to set
 	 */
-	public void setDsPayerDNI(String dsPayerDNI) {
-		this.dsPayerDNI = dsPayerDNI;
+	public void setDsPayerDNI(String strPayerDNI) {
+		this.strPayerDNI = strPayerDNI;
 	}
 
 	/**
-	 * Gets the ds payer street.
+	 * Gets the str payer street.
 	 *
-	 * @return the dsPayerStreet
+	 * @return the strPayerStreet
 	 */
 	public String getDsPayerStreet() {
-		return dsPayerStreet;
+		return strPayerStreet;
 	}
 
 	/**
-	 * Sets the ds payer street.
+	 * Sets the str payer street.
 	 *
-	 * @param dsPayerStreet the dsPayerStreet to set
+	 * @param strPayerStreet the strPayerStreet to set
 	 */
-	public void setDsPayerStreet(String dsPayerStreet) {
-		this.dsPayerStreet = dsPayerStreet;
+	public void setDsPayerStreet(String strPayerStreet) {
+		this.strPayerStreet = strPayerStreet;
 	}
 
 	/**
-	 * Gets the ds payer street 2.
+	 * Gets the str payer street 2.
 	 *
-	 * @return the dsPayerStreet2
+	 * @return the strPayerStreet2
 	 */
 	public String getDsPayerStreet2() {
-		return dsPayerStreet2;
+		return strPayerStreet2;
 	}
 
 	/**
-	 * Sets the ds payer street 2.
+	 * Sets the str payer street 2.
 	 *
-	 * @param dsPayerStreet2 the dsPayerStreet2 to set
+	 * @param strPayerStreet2 the strPayerStreet2 to set
 	 */
-	public void setDsPayerStreet2(String dsPayerStreet2) {
-		this.dsPayerStreet2 = dsPayerStreet2;
+	public void setDsPayerStreet2(String strPayerStreet2) {
+		this.strPayerStreet2 = strPayerStreet2;
 	}
 
 	/**
-	 * Gets the ds payer street 3.
+	 * Gets the str payer street 3.
 	 *
-	 * @return the dsPayerStreet3
+	 * @return the strPayerStreet3
 	 */
 	public String getDsPayerStreet3() {
-		return dsPayerStreet3;
+		return strPayerStreet3;
 	}
 
 	/**
-	 * Sets the ds payer street 3.
+	 * Sets the str payer street 3.
 	 *
-	 * @param dsPayerStreet3 the dsPayerStreet3 to set
+	 * @param strPayerStreet3 the strPayerStreet3 to set
 	 */
-	public void setDsPayerStreet3(String dsPayerStreet3) {
-		this.dsPayerStreet3 = dsPayerStreet3;
+	public void setDsPayerStreet3(String strPayerStreet3) {
+		this.strPayerStreet3 = strPayerStreet3;
 	}
 
 	/**
-	 * Gets the ds city.
+	 * Gets the str city.
 	 *
-	 * @return the dsCity
+	 * @return the strCity
 	 */
 	public String getDsCity() {
-		return dsCity;
+		return strCity;
 	}
 
 	/**
-	 * Sets the ds city.
+	 * Sets the str city.
 	 *
-	 * @param dsCity the dsCity to set
+	 * @param strCity the strCity to set
 	 */
-	public void setDsCity(String dsCity) {
-		this.dsCity = dsCity;
+	public void setDsCity(String strCity) {
+		this.strCity = strCity;
 	}
 
 	/**
-	 * Gets the ds state.
+	 * Gets the str state.
 	 *
-	 * @return the dsState
+	 * @return the strState
 	 */
 	public String getDsState() {
-		return dsState;
+		return strState;
 	}
 
 	/**
-	 * Sets the ds state.
+	 * Sets the str state.
 	 *
-	 * @param dsState the dsState to set
+	 * @param strState the strState to set
 	 */
-	public void setDsState(String dsState) {
-		this.dsState = dsState;
+	public void setDsState(String strState) {
+		this.strState = strState;
 	}
 
 	/**
-	 * Gets the ds country.
+	 * Gets the str country.
 	 *
-	 * @return the dsCountry
+	 * @return the strCountry
 	 */
 	public String getDsCountry() {
-		return dsCountry;
+		return strCountry;
 	}
 
 	/**
-	 * Sets the ds country.
+	 * Sets the str country.
 	 *
-	 * @param dsCountry the dsCountry to set
+	 * @param strCountry the strCountry to set
 	 */
-	public void setDsCountry(String dsCountry) {
-		this.dsCountry = dsCountry;
+	public void setDsCountry(String strCountry) {
+		this.strCountry = strCountry;
 	}
 
 	/**
-	 * Gets the ds postal code.
+	 * Gets the str postal code.
 	 *
-	 * @return the dsPostalCode
+	 * @return the strPostalCode
 	 */
 	public String getDsPostalCode() {
-		return dsPostalCode;
+		return strPostalCode;
 	}
 
 	/**
-	 * Sets the ds postal code.
+	 * Sets the str postal code.
 	 *
-	 * @param dsPostalCode the dsPostalCode to set
+	 * @param strPostalCode the strPostalCode to set
 	 */
-	public void setDsPostalCode(String dsPostalCode) {
-		this.dsPostalCode = dsPostalCode;
+	public void setDsPostalCode(String strPostalCode) {
+		this.strPostalCode = strPostalCode;
 	}
 
 	/**
-	 * Gets the ds payer phone.
+	 * Gets the str payer phone.
 	 *
-	 * @return the dsPayerPhone
+	 * @return the strPayerPhone
 	 */
 	public String getDsPayerPhone() {
-		return dsPayerPhone;
+		return strPayerPhone;
 	}
 
 	/**
-	 * Sets the ds payer phone.
+	 * Sets the str payer phone.
 	 *
-	 * @param dsPayerPhone the dsPayerPhone to set
+	 * @param strPayerPhone the strPayerPhone to set
 	 */
-	public void setDsPayerPhone(String dsPayerPhone) {
-		this.dsPayerPhone = dsPayerPhone;
+	public void setDsPayerPhone(String strPayerPhone) {
+		this.strPayerPhone = strPayerPhone;
 	}
 
 	/**
-	 * Gets the ds plan description.
+	 * Gets the str plan description.
 	 *
-	 * @return the dsPlanDescription
+	 * @return the strPlanDescription
 	 */
 	public String getDsPlanDescription() {
-		return dsPlanDescription;
+		return strPlanDescription;
 	}
 
 	/**
-	 * Sets the ds plan description.
+	 * Sets the str plan description.
 	 *
-	 * @param dsPlanDescription the dsPlanDescription to set
+	 * @param strPlanDescription the strPlanDescription to set
 	 */
-	public void setDsPlanDescription(String dsPlanDescription) {
-		this.dsPlanDescription = dsPlanDescription;
+	public void setDsPlanDescription(String strPlanDescription) {
+		this.strPlanDescription = strPlanDescription;
 	}
 
 	/**
-	 * Gets the ds plan code.
+	 * Gets the str plan code.
 	 *
-	 * @return the dsPlanCode
+	 * @return the strPlanCode
 	 */
 	public String getDsPlanCode() {
-		return dsPlanCode;
+		return strPlanCode;
 	}
 
 	/**
-	 * Sets the ds plan code.
+	 * Sets the str plan code.
 	 *
-	 * @param dsPlanCode the dsPlanCode to set
+	 * @param strPlanCode the strPlanCode to set
 	 */
-	public void setDsPlanCode(String dsPlanCode) {
-		this.dsPlanCode = dsPlanCode;
+	public void setDsPlanCode(String strPlanCode) {
+		this.strPlanCode = strPlanCode;
 	}
 
 	/**
-	 * Gets the ds plan interval.
+	 * Gets the str plan interval.
 	 *
-	 * @return the dsPlanInterval
+	 * @return the strPlanInterval
 	 */
 	public String getDsPlanInterval() {
-		return dsPlanInterval;
+		return strPlanInterval;
 	}
 
 	/**
-	 * Sets the ds plan interval.
+	 * Sets the str plan interval.
 	 *
-	 * @param dsPlanInterval the dsPlanInterval to set
+	 * @param strPlanInterval the strPlanInterval to set
 	 */
-	public void setDsPlanInterval(String dsPlanInterval) {
-		this.dsPlanInterval = dsPlanInterval;
+	public void setDsPlanInterval(String strPlanInterval) {
+		this.strPlanInterval = strPlanInterval;
 	}
 
 	/**
-	 * Gets the ds plan interval count.
+	 * Gets the str plan interval count.
 	 *
-	 * @return the dsPlanIntervalCount
+	 * @return the strPlanIntervalCount
 	 */
 	public String getDsPlanIntervalCount() {
-		return dsPlanIntervalCount;
+		return strPlanIntervalCount;
 	}
 
 	/**
-	 * Sets the ds plan interval count.
+	 * Sets the str plan interval count.
 	 *
-	 * @param dsPlanIntervalCount the dsPlanIntervalCount to set
+	 * @param strPlanIntervalCount the strPlanIntervalCount to set
 	 */
-	public void setDsPlanIntervalCount(String dsPlanIntervalCount) {
-		this.dsPlanIntervalCount = dsPlanIntervalCount;
+	public void setDsPlanIntervalCount(String strPlanIntervalCount) {
+		this.strPlanIntervalCount = strPlanIntervalCount;
 	}
 
 	/**
-	 * Gets the ds plan currency.
+	 * Gets the str plan currency.
 	 *
-	 * @return the dsPlanCurrency
+	 * @return the strPlanCurrency
 	 */
 	public String getDsPlanCurrency() {
-		return dsPlanCurrency;
+		return strPlanCurrency;
 	}
 
 	/**
-	 * Sets the ds plan currency.
+	 * Sets the str plan currency.
 	 *
-	 * @param dsPlanCurrency the dsPlanCurrency to set
+	 * @param strPlanCurrency the strPlanCurrency to set
 	 */
-	public void setDsPlanCurrency(String dsPlanCurrency) {
-		this.dsPlanCurrency = dsPlanCurrency;
+	public void setDsPlanCurrency(String strPlanCurrency) {
+		this.strPlanCurrency = strPlanCurrency;
 	}
 
 	/**
-	 * Gets the ds plan value.
+	 * Gets the str plan value.
 	 *
-	 * @return the dsPlanValue
+	 * @return the strPlanValue
 	 */
 	public String getDsPlanValue() {
-		return dsPlanValue;
+		return strPlanValue;
 	}
 
 	/**
-	 * Sets the ds plan value.
+	 * Sets the str plan value.
 	 *
-	 * @param dsPlanValue the dsPlanValue to set
+	 * @param strPlanValue the strPlanValue to set
 	 */
-	public void setDsPlanValue(String dsPlanValue) {
-		this.dsPlanValue = dsPlanValue;
+	public void setDsPlanValue(String strPlanValue) {
+		this.strPlanValue = strPlanValue;
 	}
 
 	/**
-	 * Gets the ds plan tax.
+	 * Gets the str plan tax.
 	 *
-	 * @return the dsPlanTax
+	 * @return the strPlanTax
 	 */
 	public String getDsPlanTax() {
-		return dsPlanTax;
+		return strPlanTax;
 	}
 
 	/**
-	 * Sets the ds plan tax.
+	 * Sets the str plan tax.
 	 *
-	 * @param dsPlanTax the dsPlanTax to set
+	 * @param strPlanTax the strPlanTax to set
 	 */
-	public void setDsPlanTax(String dsPlanTax) {
-		this.dsPlanTax = dsPlanTax;
+	public void setDsPlanTax(String strPlanTax) {
+		this.strPlanTax = strPlanTax;
 	}
 
 	/**
-	 * Gets the ds plan tax return base.
+	 * Gets the str plan tax return base.
 	 *
-	 * @return the dsPlanTaxReturnBase
+	 * @return the strPlanTaxReturnBase
 	 */
 	public String getDsPlanTaxReturnBase() {
-		return dsPlanTaxReturnBase;
+		return strPlanTaxReturnBase;
 	}
 
 	/**
-	 * Sets the ds plan tax return base.
+	 * Sets the str plan tax return base.
 	 *
-	 * @param dsPlanTaxReturnBase the dsPlanTaxReturnBase to set
+	 * @param strPlanTaxReturnBase the strPlanTaxReturnBase to set
 	 */
-	public void setDsPlanTaxReturnBase(String dsPlanTaxReturnBase) {
-		this.dsPlanTaxReturnBase = dsPlanTaxReturnBase;
+	public void setDsPlanTaxReturnBase(String strPlanTaxReturnBase) {
+		this.strPlanTaxReturnBase = strPlanTaxReturnBase;
 	}
 
 	/**
-	 * Gets the ds account id.
+	 * Gets the str account id.
 	 *
-	 * @return the dsAccountId
+	 * @return the strAccountId
 	 */
 	public String getDsAccountId() {
-		return dsAccountId;
+		return strAccountId;
 	}
 
 	/**
-	 * Sets the ds account id.
+	 * Sets the str account id.
 	 *
-	 * @param dsAccountId the dsAccountId to set
+	 * @param strAccountId the strAccountId to set
 	 */
-	public void setDsAccountId(String dsAccountId) {
-		this.dsAccountId = dsAccountId;
+	public void setDsAccountId(String strAccountId) {
+		this.strAccountId = strAccountId;
 	}
 
 	/**
-	 * Gets the ds plan attempts delay.
+	 * Gets the str plan attempts delay.
 	 *
-	 * @return the dsPlanAttemptsDelay
+	 * @return the strPlanAttemptsDelay
 	 */
 	public String getDsPlanAttemptsDelay() {
-		return dsPlanAttemptsDelay;
+		return strPlanAttemptsDelay;
 	}
 
 	/**
-	 * Sets the ds plan attempts delay.
+	 * Sets the str plan attempts delay.
 	 *
-	 * @param dsPlanAttemptsDelay the dsPlanAttemptsDelay to set
+	 * @param strPlanAttemptsDelay the strPlanAttemptsDelay to set
 	 */
-	public void setDsPlanAttemptsDelay(String dsPlanAttemptsDelay) {
-		this.dsPlanAttemptsDelay = dsPlanAttemptsDelay;
+	public void setDsPlanAttemptsDelay(String strPlanAttemptsDelay) {
+		this.strPlanAttemptsDelay = strPlanAttemptsDelay;
 	}
 
 	/**
-	 * Gets the ds plan max payments.
+	 * Gets the str plan max payments.
 	 *
-	 * @return the dsPlanMaxPayments
+	 * @return the strPlanMaxPayments
 	 */
 	public String getDsPlanMaxPayments() {
-		return dsPlanMaxPayments;
+		return strPlanMaxPayments;
 	}
 
 	/**
-	 * Sets the ds plan max payments.
+	 * Sets the str plan max payments.
 	 *
-	 * @param dsPlanMaxPayments the dsPlanMaxPayments to set
+	 * @param strPlanMaxPayments the strPlanMaxPayments to set
 	 */
-	public void setDsPlanMaxPayments(String dsPlanMaxPayments) {
-		this.dsPlanMaxPayments = dsPlanMaxPayments;
+	public void setDsPlanMaxPayments(String strPlanMaxPayments) {
+		this.strPlanMaxPayments = strPlanMaxPayments;
 	}
 
 	/**
-	 * Gets the ds plan max payments attempts.
+	 * Gets the str plan max payments attempts.
 	 *
-	 * @return the dsPlanMaxPaymentsAttempts
+	 * @return the strPlanMaxPaymentsAttempts
 	 */
 	public String getDsPlanMaxPaymentsAttempts() {
-		return dsPlanMaxPaymentsAttempts;
+		return strPlanMaxPaymentsAttempts;
 	}
 
 	/**
-	 * Sets the ds plan max payments attempts.
+	 * Sets the str plan max payments attempts.
 	 *
-	 * @param dsPlanMaxPaymentsAttempts the dsPlanMaxPaymentsAttempts to set
+	 * @param strPlanMaxPaymentsAttempts the strPlanMaxPaymentsAttempts to set
 	 */
-	public void setDsPlanMaxPaymentsAttempts(String dsPlanMaxPaymentsAttempts) {
-		this.dsPlanMaxPaymentsAttempts = dsPlanMaxPaymentsAttempts;
+	public void setDsPlanMaxPaymentsAttempts(String strPlanMaxPaymentsAttempts) {
+		this.strPlanMaxPaymentsAttempts = strPlanMaxPaymentsAttempts;
 	}
 
 	/**
-	 * Gets the ds plan max pending payments.
+	 * Gets the str plan max pending payments.
 	 *
-	 * @return the dsPlanMaxPendingPayments
+	 * @return the strPlanMaxPendingPayments
 	 */
 	public String getDsPlanMaxPendingPayments() {
-		return dsPlanMaxPendingPayments;
+		return strPlanMaxPendingPayments;
 	}
 
 	/**
-	 * Sets the ds plan max pending payments.
+	 * Sets the str plan max pending payments.
 	 *
-	 * @param dsPlanMaxPendingPayments the dsPlanMaxPendingPayments to set
+	 * @param strPlanMaxPendingPayments the strPlanMaxPendingPayments to set
 	 */
-	public void setDsPlanMaxPendingPayments(String dsPlanMaxPendingPayments) {
-		this.dsPlanMaxPendingPayments = dsPlanMaxPendingPayments;
+	public void setDsPlanMaxPendingPayments(String strPlanMaxPendingPayments) {
+		this.strPlanMaxPendingPayments = strPlanMaxPendingPayments;
 	}
 
 	/**
-	 * Gets the ds customer id.
+	 * Gets the str customer id.
 	 *
-	 * @return the dsCustomerId
+	 * @return the strCustomerId
 	 */
 	public String getDsCustomerId() {
-		return dsCustomerId;
+		return strCustomerId;
 	}
 
 	/**
-	 * Sets the ds customer id.
+	 * Sets the str customer id.
 	 *
-	 * @param dsCustomerId the dsCustomerId to set
+	 * @param strCustomerId the strCustomerId to set
 	 */
-	public void setDsCustomerId(String dsCustomerId) {
-		this.dsCustomerId = dsCustomerId;
+	public void setDsCustomerId(String strCustomerId) {
+		this.strCustomerId = strCustomerId;
 	}
 
 	/**
-	 * Gets the ds token id.
+	 * Gets the str token id.
 	 *
-	 * @return the dsTokenId
+	 * @return the strTokenId
 	 */
 	public String getDsTokenId() {
-		return dsTokenId;
+		return strTokenId;
 	}
 
 	/**
-	 * Sets the ds token id.
+	 * Sets the str token id.
 	 *
-	 * @param dsTokenId the dsTokenId to set
+	 * @param strTokenId the strTokenId to set
 	 */
-	public void setDsTokenId(String dsTokenId) {
-		this.dsTokenId = dsTokenId;
+	public void setDsTokenId(String strTokenId) {
+		this.strTokenId = strTokenId;
 	}
 
 

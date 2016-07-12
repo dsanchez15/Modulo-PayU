@@ -10,42 +10,43 @@ package co.payU.dto;
  */
 public class TarjetaCreditoDto {
 	
-	private String customerID;
-	private String creditCardNumber;
-	private String creedirtCardExpirationDate;
-	private String PaymentMethod;
+	
+	private String strCustomerID;
+	private String strCreditCardNumber;
+	private String strCreedirtCardExpirationDate;
+	private String strPaymentMethod;
 	private PersonaDto PayerUser;
 
-	public String getCustomerID() {
-		return customerID;
+	public String getDsCustomerID() {
+		return strCustomerID;
 	}
 
-	public void setCustomerID(String customerID) {
-		this.customerID = customerID;
+	public void setDsCustomerID(String strCustomerID) {
+		this.strCustomerID = strCustomerID;
 	}
 
-	public String getCreditCardNumber() {
-		return creditCardNumber;
+	public String getDsCreditCardNumber() {
+		return strCreditCardNumber;
 	}
 
-	public void setCreditCardNumber(String creditCardNumber) {
-		this.creditCardNumber = creditCardNumber;
+	public void setDsCreditCardNumber(String strCreditCardNumber) {
+		this.strCreditCardNumber = strCreditCardNumber;
 	}
 
-	public String getCreedirtCardExpirationDate() {
-		return creedirtCardExpirationDate;
+	public String getDsCreedirtCardExpirationDate() {
+		return strCreedirtCardExpirationDate;
 	}
 
-	public void setCreedirtCardExpirationDate(String creedirtCardExpirationDate) {
-		this.creedirtCardExpirationDate = creedirtCardExpirationDate;
+	public void setDsCreedirtCardExpirationDate(String strCreedirtCardExpirationDate) {
+		this.strCreedirtCardExpirationDate = strCreedirtCardExpirationDate;
 	}
 
-	public String getPaymentMethod() {
-		return PaymentMethod;
+	public String getDSPaymentMethod() {
+		return strPaymentMethod;
 	}
 
-	public void setPaymentMethod(String paymentMethod) {
-		PaymentMethod = paymentMethod;
+	public void setDSPaymentMethod(String paymentMethod) {
+		strPaymentMethod = paymentMethod;
 	}
 
 	public PersonaDto getPayerUser() {

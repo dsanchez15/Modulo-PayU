@@ -21,6 +21,7 @@ import co.payU.interfaces.IConsultas;
  * @author Duvan A. Sanchez
  * @version 1.0.0
  * 27 de jun. de 2016 10:47:38
+ * 
  */
 public class ConsultasPayU implements IConsultas{
 

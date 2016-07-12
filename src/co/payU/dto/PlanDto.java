@@ -12,245 +12,245 @@ package co.payU.dto;
  */
 public class PlanDto {
 
-	/** The ds account id. */
+	/** The str account id. */
 	// Obligatorio create
-	private String dsAccountId;
+	private String strAccountId;
 
-	/** The ds plan attempsts delay. */
+	/** The str plan attempsts delay. */
 	// Obligatorio create y update
-	private String dsPlanAttempstsDelay;
+	private String strPlanAttempstsDelay;
 
-	/** The ds plan code. */
+	/** The str plan code. */
 	// Obligatorio create, inalterable update
-	private String dsPlanCode;
+	private String strPlanCode;
 
-	/** The ds plan currency. */
+	/** The str plan currency. */
 	// Obligatorio create y update
-	private String dsPlanCurrency;
+	private String strPlanCurrency;
 
-	/** The ds plan description. */
+	/** The str plan description. */
 	// Obligatorio create y update
-	private String dsPlanDescription;
+	private String strPlanDescription;
 
-	/** The ds plan interval. */
+	/** The str plan interval. */
 	// Obligatorio create
-	private String dsPlanInterval;
+	private String strPlanInterval;
 
-	/** The ds plan interval count. */
+	/** The str plan interval count. */
 	// Obligatorio create
-	private String dsPlanIntervalCount;
+	private String strPlanIntervalCount;
 
-	/** The ds plan max payments. */
+	/** The str plan max payments. */
 	// Obligatorio create
-	private String dsPlanMaxPayments;
+	private String strPlanMaxPayments;
 
-	/** The ds plan tax. */
+	/** The str plan tax. */
 	// Opcional
-	private String dsPlanTax;
+	private String strPlanTax;
 
-	/** The ds plan tax return base. */
+	/** The str plan tax return base. */
 	// Opcional
-	private String dsPlanTaxReturnBase;
+	private String strPlanTaxReturnBase;
 
-	/** The ds plan value. */
+	/** The str plan value. */
 	// Obligatorio create y update
-	private String dsPlanValue;
+	private String strPlanValue;
 
 	/**
-	 * Gets the ds account id.
+	 * Gets the str account id.
 	 *
-	 * @return the ds account id
+	 * @return the str account id
 	 */
 	public String getDsAccountId() {
-		return dsAccountId;
+		return strAccountId;
 	}
 
 	/**
-	 * Sets the ds account id.
+	 * Sets the str account id.
 	 *
-	 * @param dsAccountId the new ds account id
+	 * @param strAccountId the new str account id
 	 */
-	public void setDsAccountId(String dsAccountId) {
-		this.dsAccountId = dsAccountId;
+	public void setDsAccountId(String strAccountId) {
+		this.strAccountId = strAccountId;
 	}
 
 	/**
-	 * Gets the ds plan attempsts delay.
+	 * Gets the str plan attempsts delay.
 	 *
-	 * @return the ds plan attempsts delay
+	 * @return the str plan attempsts delay
 	 */
 	public String getDsPlanAttempstsDelay() {
-		return dsPlanAttempstsDelay;
+		return strPlanAttempstsDelay;
 	}
 
 	/**
-	 * Sets the ds plan attempsts delay.
+	 * Sets the str plan attempsts delay.
 	 *
-	 * @param dsPlanAttempstsDelay the new ds plan attempsts delay
+	 * @param strPlanAttempstsDelay the new str plan attempsts delay
 	 */
-	public void setDsPlanAttempstsDelay(String dsPlanAttempstsDelay) {
-		this.dsPlanAttempstsDelay = dsPlanAttempstsDelay;
+	public void setDsPlanAttempstsDelay(String strPlanAttempstsDelay) {
+		this.strPlanAttempstsDelay = strPlanAttempstsDelay;
 	}
 
 	/**
-	 * Gets the ds plan code.
+	 * Gets the str plan code.
 	 *
-	 * @return the ds plan code
+	 * @return the str plan code
 	 */
 	public String getDsPlanCode() {
-		return dsPlanCode;
+		return strPlanCode;
 	}
 
 	/**
-	 * Sets the ds plan code.
+	 * Sets the str plan code.
 	 *
-	 * @param dsPlanCode the new ds plan code
+	 * @param strPlanCode the new str plan code
 	 */
-	public void setDsPlanCode(String dsPlanCode) {
-		this.dsPlanCode = dsPlanCode;
+	public void setDsPlanCode(String strPlanCode) {
+		this.strPlanCode = strPlanCode;
 	}
 
 	/**
-	 * Gets the ds plan currency.
+	 * Gets the str plan currency.
 	 *
-	 * @return the ds plan currency
+	 * @return the str plan currency
 	 */
 	public String getDsPlanCurrency() {
-		return dsPlanCurrency;
+		return strPlanCurrency;
 	}
 
 	/**
-	 * Sets the ds plan currency.
+	 * Sets the str plan currency.
 	 *
-	 * @param dsPlanCurrency the new ds plan currency
+	 * @param strPlanCurrency the new str plan currency
 	 */
-	public void setDsPlanCurrency(String dsPlanCurrency) {
-		this.dsPlanCurrency = dsPlanCurrency;
+	public void setDsPlanCurrency(String strPlanCurrency) {
+		this.strPlanCurrency = strPlanCurrency;
 	}
 
 	/**
-	 * Gets the ds plan description.
+	 * Gets the str plan description.
 	 *
-	 * @return the ds plan description
+	 * @return the str plan description
 	 */
 	public String getDsPlanDescription() {
-		return dsPlanDescription;
+		return strPlanDescription;
 	}
 
 	/**
-	 * Sets the ds plan description.
+	 * Sets the str plan description.
 	 *
-	 * @param dsPlanDescription the new ds plan description
+	 * @param strPlanDescription the new str plan description
 	 */
-	public void setDsPlanDescription(String dsPlanDescription) {
-		this.dsPlanDescription = dsPlanDescription;
+	public void setDsPlanDescription(String strPlanDescription) {
+		this.strPlanDescription = strPlanDescription;
 	}
 
 	/**
-	 * Gets the ds plan interval.
+	 * Gets the str plan interval.
 	 *
-	 * @return the ds plan interval
+	 * @return the str plan interval
 	 */
 	public String getDsPlanInterval() {
-		return dsPlanInterval;
+		return strPlanInterval;
 	}
 
 	/**
-	 * Sets the ds plan interval.
+	 * Sets the str plan interval.
 	 *
-	 * @param dsPlanInterval the new ds plan interval
+	 * @param strPlanInterval the new str plan interval
 	 */
-	public void setDsPlanInterval(String dsPlanInterval) {
-		this.dsPlanInterval = dsPlanInterval;
+	public void setDsPlanInterval(String strPlanInterval) {
+		this.strPlanInterval = strPlanInterval;
 	}
 
 	/**
-	 * Gets the ds plan interval count.
+	 * Gets the str plan interval count.
 	 *
-	 * @return the ds plan interval count
+	 * @return the str plan interval count
 	 */
 	public String getDsPlanIntervalCount() {
-		return dsPlanIntervalCount;
+		return strPlanIntervalCount;
 	}
 
 	/**
-	 * Sets the ds plan interval count.
+	 * Sets the str plan interval count.
 	 *
-	 * @param dsPlanIntervalCount the new ds plan interval count
+	 * @param strPlanIntervalCount the new str plan interval count
 	 */
-	public void setDsPlanIntervalCount(String dsPlanIntervalCount) {
-		this.dsPlanIntervalCount = dsPlanIntervalCount;
+	public void setDsPlanIntervalCount(String strPlanIntervalCount) {
+		this.strPlanIntervalCount = strPlanIntervalCount;
 	}
 
 	/**
-	 * Gets the ds plan max payments.
+	 * Gets the str plan max payments.
 	 *
-	 * @return the ds plan max payments
+	 * @return the str plan max payments
 	 */
 	public String getDsPlanMaxPayments() {
-		return dsPlanMaxPayments;
+		return strPlanMaxPayments;
 	}
 
 	/**
-	 * Sets the ds plan max payments.
+	 * Sets the str plan max payments.
 	 *
-	 * @param dsPlanMaxPayments the new ds plan max payments
+	 * @param strPlanMaxPayments the new str plan max payments
 	 */
-	public void setDsPlanMaxPayments(String dsPlanMaxPayments) {
-		this.dsPlanMaxPayments = dsPlanMaxPayments;
+	public void setDsPlanMaxPayments(String strPlanMaxPayments) {
+		this.strPlanMaxPayments = strPlanMaxPayments;
 	}
 
 	/**
-	 * Gets the ds plan tax.
+	 * Gets the str plan tax.
 	 *
-	 * @return the ds plan tax
+	 * @return the str plan tax
 	 */
 	public String getDsPlanTax() {
-		return dsPlanTax;
+		return strPlanTax;
 	}
 
 	/**
-	 * Sets the ds plan tax.
+	 * Sets the str plan tax.
 	 *
-	 * @param dsPlanTax the new ds plan tax
+	 * @param strPlanTax the new str plan tax
 	 */
-	public void setDsPlanTax(String dsPlanTax) {
-		this.dsPlanTax = dsPlanTax;
+	public void setDsPlanTax(String strPlanTax) {
+		this.strPlanTax = strPlanTax;
 	}
 
 	/**
-	 * Gets the ds plan tax return base.
+	 * Gets the str plan tax return base.
 	 *
-	 * @return the ds plan tax return base
+	 * @return the str plan tax return base
 	 */
 	public String getDsPlanTaxReturnBase() {
-		return dsPlanTaxReturnBase;
+		return strPlanTaxReturnBase;
 	}
 
 	/**
-	 * Sets the ds plan tax return base.
+	 * Sets the str plan tax return base.
 	 *
-	 * @param dsPlanTaxReturnBase the new ds plan tax return base
+	 * @param strPlanTaxReturnBase the new str plan tax return base
 	 */
-	public void setDsPlanTaxReturnBase(String dsPlanTaxReturnBase) {
-		this.dsPlanTaxReturnBase = dsPlanTaxReturnBase;
+	public void setDsPlanTaxReturnBase(String strPlanTaxReturnBase) {
+		this.strPlanTaxReturnBase = strPlanTaxReturnBase;
 	}
 
 	/**
-	 * Gets the ds plan value.
+	 * Gets the str plan value.
 	 *
-	 * @return the ds plan value
+	 * @return the str plan value
 	 */
 	public String getDsPlanValue() {
-		return dsPlanValue;
+		return strPlanValue;
 	}
 
 	/**
-	 * Sets the ds plan value.
+	 * Sets the str plan value.
 	 *
-	 * @param dsPlanValue the new ds plan value
+	 * @param strPlanValue the new str plan value
 	 */
-	public void setDsPlanValue(String dsPlanValue) {
-		this.dsPlanValue = dsPlanValue;
+	public void setDsPlanValue(String strPlanValue) {
+		this.strPlanValue = strPlanValue;
 	}
 }

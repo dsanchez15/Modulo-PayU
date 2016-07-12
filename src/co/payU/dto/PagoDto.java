@@ -9,137 +9,137 @@ package co.payU.dto;
  */
 public class PagoDto {
 
-	/** The ds account id. */
-	private String dsAccountId;
+	/** The str account id. */
+	private String strAccountId;
 
-	/** The ds buyer city. */
-	private String dsBuyerCity;
+	/** The str buyer city. */
+	private String strBuyerCity;
 
-	/** The ds buyer contac phone. */
-	private String dsBuyerContacPhone;
+	/** The str buyer contac phone. */
+	private String strBuyerContacPhone;
 
-	/** The ds buyer country. */
-	private String dsBuyerCountry;
+	/** The str buyer country. */
+	private String strBuyerCountry;
 
-	/** The ds buyer DNI. */
-	private String dsBuyerDNI;
+	/** The str buyer DNI. */
+	private String strBuyerDNI;
 
-	/** The ds buyer email. */
-	private String dsBuyerEmail;
+	/** The str buyer email. */
+	private String strBuyerEmail;
 
-	/** The ds buyer id. */
-	private String dsBuyerId;
+	/** The str buyer id. */
+	private String strBuyerId;
 
-	/** The ds buyer name. */
-	private String dsBuyerName;
+	/** The str buyer name. */
+	private String strBuyerName;
 
-	/** The ds buyer phone. */
-	private String dsBuyerPhone;
+	/** The str buyer phone. */
+	private String strBuyerPhone;
 
-	/** The ds buyer postal code. */
-	private String dsBuyerPostalCode;
+	/** The str buyer postal code. */
+	private String strBuyerPostalCode;
 
-	/** The ds buyer state. */
-	private String dsBuyerState;
+	/** The str buyer state. */
+	private String strBuyerState;
 
-	/** The ds buyer street. */
-	private String dsBuyerStreet;
+	/** The str buyer street. */
+	private String strBuyerStreet;
 
-	/** The ds buyer steet 2. */
-	private String dsBuyerSteet2;
+	/** The str buyer steet 2. */
+	private String strBuyerSteet2;
 
-	/** The ds cookie. */
-	private String dsCookie;
+	/** The str cookie. */
+	private String strCookie;
 
-	/** The ds country. */
-	private String dsCountry;
+	/** The str country. */
+	private String strCountry;
 
-	/** The ds credit card number. */
-	private String dsCreditCardNumber;
+	/** The str credit card number. */
+	private String strCreditCardNumber;
 
-	/** The ds credit card expiration date. */
-	private String dsCreditCardExpirationDate;
+	/** The str credit card expiration date. */
+	private String strCreditCardExpirationDate;
 
-	/** The ds credit card segurity code. */
-	private String dsCreditCardSegurityCode;
+	/** The str credit card segurity code. */
+	private String strCreditCardSegurityCode;
 
-	/** The ds currency. */
-	private String dsCurrency;
+	/** The str currency. */
+	private String strCurrency;
 
-	/** The ds description. */
-	private String dsDescription;
+	/** The str description. */
+	private String strDescription;
 
-	/** The ds device session id. */
-	private String dsDeviceSessionId;
+	/** The str device session id. */
+	private String strDeviceSessionId;
 
-	/** The ds expiration date. */
-	private String dsExpirationDate;
+	/** The str expiration date. */
+	private String strExpirationDate;
 
-	/** The ds installments number. */
-	private String dsInstallmentsNumber;
+	/** The str installments number. */
+	private String strInstallmentsNumber;
 
-	/** The ds IP address. */
-	private String dsIPAddress;
+	/** The str IP address. */
+	private String strIPAddress;
 
-	/** The ds language. */
-	private String dsLanguage;
+	/** The str language. */
+	private String strLanguage;
 
-	/** The ds payer city. */
-	private String dsPayerCity;
+	/** The str payer city. */
+	private String strPayerCity;
 
-	/** The ds payer contact phone. */
-	private String dsPayerContactPhone;
+	/** The str payer contact phone. */
+	private String strPayerContactPhone;
 
-	/** The ds payer country. */
-	private String dsPayerCountry;
+	/** The str payer country. */
+	private String strPayerCountry;
 
-	/** The ds payer DNI. */
-	private String dsPayerDNI;
+	/** The str payer DNI. */
+	private String strPayerDNI;
 
-	/** The ds payer document type. */
-	private String dsPayerDocumentType;
+	/** The str payer document type. */
+	private String strPayerDocumentType;
 
-	/** The ds payer email. */
-	private String dsPayerEmail;
+	/** The str payer email. */
+	private String strPayerEmail;
 
-	/** The ds payer id. */
-	private String dsPayerId;
+	/** The str payer id. */
+	private String strPayerId;
 
-	/** The ds payer name. */
-	private String dsPayerName;
+	/** The str payer name. */
+	private String strPayerName;
 
-	/** The ds payer person type. */
-	private String dsPayerPersonType;
+	/** The str payer person type. */
+	private String strPayerPersonType;
 
-	/** The ds payer phone. */
-	private String dsPayerPhone;
+	/** The str payer phone. */
+	private String strPayerPhone;
 
-	/** The ds payer postal code. */
-	private String dsPayerPostalCode;
+	/** The str payer postal code. */
+	private String strPayerPostalCode;
 
-	/** The ds payer state. */
-	private String dsPayerState;
+	/** The str payer state. */
+	private String strPayerState;
 
-	/** The ds payer street. */
-	private String dsPayerStreet;
+	/** The str payer street. */
+	private String strPayerStreet;
 
-	/** The ds payer street 2. */
-	private String dsPayerStreet2;
+	/** The str payer street 2. */
+	private String strPayerStreet2;
 
-	/** The ds payment method. */
-	private String dsPaymentMethod;
+	/** The str payment method. */
+	private String strPaymentMethod;
 
-	/** The ds reference code. */
-	private String dsReferenceCode;
+	/** The str reference code. */
+	private String strReferenceCode;
 
-	/** The ds response url. */
-	private String dsResponseUrl;
+	/** The str response url. */
+	private String strResponseUrl;
 
-	/** The ds user agent. */
-	private String dsUserAgent;
+	/** The str user agent. */
+	private String strUserAgent;
 
-	/** The ds value. */
-	private String dsValue;
+	/** The str value. */
+	private String strValue;
 
 	/**
 	 * Instantiates a new pago dto.
@@ -148,794 +148,794 @@ public class PagoDto {
 	}
 
 	/**
-	 * Gets the ds account id.
+	 * Gets the str account id.
 	 *
-	 * @return the ds account id
+	 * @return the str account id
 	 */
 	public String getDsAccountId() {
-		return dsAccountId;
+		return strAccountId;
 	}
 
 	/**
-	 * Sets the ds account id.
+	 * Sets the str account id.
 	 *
-	 * @param dsAccountId the new ds account id
+	 * @param strAccountId the new str account id
 	 */
-	public void setDsAccountId(String dsAccountId) {
-		this.dsAccountId = dsAccountId;
+	public void setDsAccountId(String strAccountId) {
+		this.strAccountId = strAccountId;
 	}
 
 	/**
-	 * Gets the ds buyer city.
+	 * Gets the str buyer city.
 	 *
-	 * @return the ds buyer city
+	 * @return the str buyer city
 	 */
 	public String getDsBuyerCity() {
-		return dsBuyerCity;
+		return strBuyerCity;
 	}
 
 	/**
-	 * Sets the ds buyer city.
+	 * Sets the str buyer city.
 	 *
-	 * @param dsBuyerCity the new ds buyer city
+	 * @param strBuyerCity the new str buyer city
 	 */
-	public void setDsBuyerCity(String dsBuyerCity) {
-		this.dsBuyerCity = dsBuyerCity;
+	public void setDsBuyerCity(String strBuyerCity) {
+		this.strBuyerCity = strBuyerCity;
 	}
 
 	/**
-	 * Gets the ds buyer contac phone.
+	 * Gets the str buyer contac phone.
 	 *
-	 * @return the ds buyer contac phone
+	 * @return the str buyer contac phone
 	 */
 	public String getDsBuyerContacPhone() {
-		return dsBuyerContacPhone;
+		return strBuyerContacPhone;
 	}
 
 	/**
-	 * Sets the ds buyer contac phone.
+	 * Sets the str buyer contac phone.
 	 *
-	 * @param dsBuyerContacPhone the new ds buyer contac phone
+	 * @param strBuyerContacPhone the new str buyer contac phone
 	 */
-	public void setDsBuyerContacPhone(String dsBuyerContacPhone) {
-		this.dsBuyerContacPhone = dsBuyerContacPhone;
+	public void setDsBuyerContacPhone(String strBuyerContacPhone) {
+		this.strBuyerContacPhone = strBuyerContacPhone;
 	}
 
 	/**
-	 * Gets the ds buyer country.
+	 * Gets the str buyer country.
 	 *
-	 * @return the ds buyer country
+	 * @return the str buyer country
 	 */
 	public String getDsBuyerCountry() {
-		return dsBuyerCountry;
+		return strBuyerCountry;
 	}
 
 	/**
-	 * Sets the ds buyer country.
+	 * Sets the str buyer country.
 	 *
-	 * @param dsBuyerCountry the new ds buyer country
+	 * @param strBuyerCountry the new str buyer country
 	 */
-	public void setDsBuyerCountry(String dsBuyerCountry) {
-		this.dsBuyerCountry = dsBuyerCountry;
+	public void setDsBuyerCountry(String strBuyerCountry) {
+		this.strBuyerCountry = strBuyerCountry;
 	}
 
 	/**
-	 * Gets the ds buyer DNI.
+	 * Gets the str buyer DNI.
 	 *
-	 * @return the ds buyer DNI
+	 * @return the str buyer DNI
 	 */
 	public String getDsBuyerDNI() {
-		return dsBuyerDNI;
+		return strBuyerDNI;
 	}
 
 	/**
-	 * Sets the ds buyer DNI.
+	 * Sets the str buyer DNI.
 	 *
-	 * @param dsBuyerDNI the new ds buyer DNI
+	 * @param strBuyerDNI the new str buyer DNI
 	 */
-	public void setDsBuyerDNI(String dsBuyerDNI) {
-		this.dsBuyerDNI = dsBuyerDNI;
+	public void setDsBuyerDNI(String strBuyerDNI) {
+		this.strBuyerDNI = strBuyerDNI;
 	}
 
 	/**
-	 * Gets the ds buyer email.
+	 * Gets the str buyer email.
 	 *
-	 * @return the ds buyer email
+	 * @return the str buyer email
 	 */
 	public String getDsBuyerEmail() {
-		return dsBuyerEmail;
+		return strBuyerEmail;
 	}
 
 	/**
-	 * Sets the ds buyer email.
+	 * Sets the str buyer email.
 	 *
-	 * @param dsBuyerEmail the new ds buyer email
+	 * @param strBuyerEmail the new str buyer email
 	 */
-	public void setDsBuyerEmail(String dsBuyerEmail) {
-		this.dsBuyerEmail = dsBuyerEmail;
+	public void setDsBuyerEmail(String strBuyerEmail) {
+		this.strBuyerEmail = strBuyerEmail;
 	}
 
 	/**
-	 * Gets the ds buyer id.
+	 * Gets the str buyer id.
 	 *
-	 * @return the ds buyer id
+	 * @return the str buyer id
 	 */
 	public String getDsBuyerId() {
-		return dsBuyerId;
+		return strBuyerId;
 	}
 
 	/**
-	 * Sets the ds buyer id.
+	 * Sets the str buyer id.
 	 *
-	 * @param dsBuyerId the new ds buyer id
+	 * @param strBuyerId the new str buyer id
 	 */
-	public void setDsBuyerId(String dsBuyerId) {
-		this.dsBuyerId = dsBuyerId;
+	public void setDsBuyerId(String strBuyerId) {
+		this.strBuyerId = strBuyerId;
 	}
 
 	/**
-	 * Gets the ds buyer name.
+	 * Gets the str buyer name.
 	 *
-	 * @return the ds buyer name
+	 * @return the str buyer name
 	 */
 	public String getDsBuyerName() {
-		return dsBuyerName;
+		return strBuyerName;
 	}
 
 	/**
-	 * Sets the ds buyer name.
+	 * Sets the str buyer name.
 	 *
-	 * @param dsBuyerName the new ds buyer name
+	 * @param strBuyerName the new str buyer name
 	 */
-	public void setDsBuyerName(String dsBuyerName) {
-		this.dsBuyerName = dsBuyerName;
+	public void setDsBuyerName(String strBuyerName) {
+		this.strBuyerName = strBuyerName;
 	}
 
 	/**
-	 * Gets the ds buyer phone.
+	 * Gets the str buyer phone.
 	 *
-	 * @return the ds buyer phone
+	 * @return the str buyer phone
 	 */
 	public String getDsBuyerPhone() {
-		return dsBuyerPhone;
+		return strBuyerPhone;
 	}
 
 	/**
-	 * Sets the ds buyer phone.
+	 * Sets the str buyer phone.
 	 *
-	 * @param dsBuyerPhone the new ds buyer phone
+	 * @param strBuyerPhone the new str buyer phone
 	 */
-	public void setDsBuyerPhone(String dsBuyerPhone) {
-		this.dsBuyerPhone = dsBuyerPhone;
+	public void setDsBuyerPhone(String strBuyerPhone) {
+		this.strBuyerPhone = strBuyerPhone;
 	}
 
 	/**
-	 * Gets the ds buyer postal code.
+	 * Gets the str buyer postal code.
 	 *
-	 * @return the ds buyer postal code
+	 * @return the str buyer postal code
 	 */
 	public String getDsBuyerPostalCode() {
-		return dsBuyerPostalCode;
+		return strBuyerPostalCode;
 	}
 
 	/**
-	 * Sets the ds buyer postal code.
+	 * Sets the str buyer postal code.
 	 *
-	 * @param dsBuyerPostalCode the new ds buyer postal code
+	 * @param strBuyerPostalCode the new str buyer postal code
 	 */
-	public void setDsBuyerPostalCode(String dsBuyerPostalCode) {
-		this.dsBuyerPostalCode = dsBuyerPostalCode;
+	public void setDsBuyerPostalCode(String strBuyerPostalCode) {
+		this.strBuyerPostalCode = strBuyerPostalCode;
 	}
 
 	/**
-	 * Gets the ds buyer state.
+	 * Gets the str buyer state.
 	 *
-	 * @return the ds buyer state
+	 * @return the str buyer state
 	 */
 	public String getDsBuyerState() {
-		return dsBuyerState;
+		return strBuyerState;
 	}
 
 	/**
-	 * Sets the ds buyer state.
+	 * Sets the str buyer state.
 	 *
-	 * @param dsBuyerState the new ds buyer state
+	 * @param strBuyerState the new str buyer state
 	 */
-	public void setDsBuyerState(String dsBuyerState) {
-		this.dsBuyerState = dsBuyerState;
+	public void setDsBuyerState(String strBuyerState) {
+		this.strBuyerState = strBuyerState;
 	}
 
 	/**
-	 * Gets the ds buyer street.
+	 * Gets the str buyer street.
 	 *
-	 * @return the ds buyer street
+	 * @return the str buyer street
 	 */
 	public String getDsBuyerStreet() {
-		return dsBuyerStreet;
+		return strBuyerStreet;
 	}
 
 	/**
-	 * Sets the ds buyer street.
+	 * Sets the str buyer street.
 	 *
-	 * @param dsBuyerStreet the new ds buyer street
+	 * @param strBuyerStreet the new str buyer street
 	 */
-	public void setDsBuyerStreet(String dsBuyerStreet) {
-		this.dsBuyerStreet = dsBuyerStreet;
+	public void setDsBuyerStreet(String strBuyerStreet) {
+		this.strBuyerStreet = strBuyerStreet;
 	}
 
 	/**
-	 * Gets the ds buyer steet 2.
+	 * Gets the str buyer steet 2.
 	 *
-	 * @return the ds buyer steet 2
+	 * @return the str buyer steet 2
 	 */
 	public String getDsBuyerSteet2() {
-		return dsBuyerSteet2;
+		return strBuyerSteet2;
 	}
 
 	/**
-	 * Sets the ds buyer steet 2.
+	 * Sets the str buyer steet 2.
 	 *
-	 * @param dsBuyerSteet2 the new ds buyer steet 2
+	 * @param strBuyerSteet2 the new str buyer steet 2
 	 */
-	public void setDsBuyerSteet2(String dsBuyerSteet2) {
-		this.dsBuyerSteet2 = dsBuyerSteet2;
+	public void setDsBuyerSteet2(String strBuyerSteet2) {
+		this.strBuyerSteet2 = strBuyerSteet2;
 	}
 
 	/**
-	 * Gets the ds cookie.
+	 * Gets the str cookie.
 	 *
-	 * @return the ds cookie
+	 * @return the str cookie
 	 */
 	public String getDsCookie() {
-		return dsCookie;
+		return strCookie;
 	}
 
 	/**
-	 * Sets the ds cookie.
+	 * Sets the str cookie.
 	 *
-	 * @param dsCookie the new ds cookie
+	 * @param strCookie the new str cookie
 	 */
-	public void setDsCookie(String dsCookie) {
-		this.dsCookie = dsCookie;
+	public void setDsCookie(String strCookie) {
+		this.strCookie = strCookie;
 	}
 
 	/**
-	 * Gets the ds country.
+	 * Gets the str country.
 	 *
-	 * @return the ds country
+	 * @return the str country
 	 */
 	public String getDsCountry() {
-		return dsCountry;
+		return strCountry;
 	}
 
 	/**
-	 * Sets the ds country.
+	 * Sets the str country.
 	 *
-	 * @param dsCountry the new ds country
+	 * @param strCountry the new str country
 	 */
-	public void setDsCountry(String dsCountry) {
-		this.dsCountry = dsCountry;
+	public void setDsCountry(String strCountry) {
+		this.strCountry = strCountry;
 	}
 
 	/**
-	 * Gets the ds credit card number.
+	 * Gets the str credit card number.
 	 *
-	 * @return the ds credit card number
+	 * @return the str credit card number
 	 */
 	public String getDsCreditCardNumber() {
-		return dsCreditCardNumber;
+		return strCreditCardNumber;
 	}
 
 	/**
-	 * Sets the ds credit card number.
+	 * Sets the str credit card number.
 	 *
-	 * @param dsCreditCardNumber the new ds credit card number
+	 * @param strCreditCardNumber the new str credit card number
 	 */
-	public void setDsCreditCardNumber(String dsCreditCardNumber) {
-		this.dsCreditCardNumber = dsCreditCardNumber;
+	public void setDsCreditCardNumber(String strCreditCardNumber) {
+		this.strCreditCardNumber = strCreditCardNumber;
 	}
 
 	/**
-	 * Gets the ds credit card expiration date.
+	 * Gets the str credit card expiration date.
 	 *
-	 * @return the ds credit card expiration date
+	 * @return the str credit card expiration date
 	 */
 	public String getDsCreditCardExpirationDate() {
-		return dsCreditCardExpirationDate;
+		return strCreditCardExpirationDate;
 	}
 
 	/**
-	 * Sets the ds credit card expiration date.
+	 * Sets the str credit card expiration date.
 	 *
-	 * @param dsCreditCardExpirationDate the new ds credit card expiration date
+	 * @param strCreditCardExpirationDate the new str credit card expiration date
 	 */
-	public void setDsCreditCardExpirationDate(String dsCreditCardExpirationDate) {
-		this.dsCreditCardExpirationDate = dsCreditCardExpirationDate;
+	public void setDsCreditCardExpirationDate(String strCreditCardExpirationDate) {
+		this.strCreditCardExpirationDate = strCreditCardExpirationDate;
 	}
 
 	/**
-	 * Gets the ds credit card segurity code.
+	 * Gets the str credit card segurity code.
 	 *
-	 * @return the ds credit card segurity code
+	 * @return the str credit card segurity code
 	 */
 	public String getDsCreditCardSegurityCode() {
-		return dsCreditCardSegurityCode;
+		return strCreditCardSegurityCode;
 	}
 
 	/**
-	 * Sets the ds credit card segurity code.
+	 * Sets the str credit card segurity code.
 	 *
-	 * @param dsCreditCardSegurityCode the new ds credit card segurity code
+	 * @param strCreditCardSegurityCode the new str credit card segurity code
 	 */
-	public void setDsCreditCardSegurityCode(String dsCreditCardSegurityCode) {
-		this.dsCreditCardSegurityCode = dsCreditCardSegurityCode;
+	public void setDsCreditCardSegurityCode(String strCreditCardSegurityCode) {
+		this.strCreditCardSegurityCode = strCreditCardSegurityCode;
 	}
 
 	/**
-	 * Gets the ds currency.
+	 * Gets the str currency.
 	 *
-	 * @return the ds currency
+	 * @return the str currency
 	 */
 	public String getDsCurrency() {
-		return dsCurrency;
+		return strCurrency;
 	}
 
 	/**
-	 * Sets the ds currency.
+	 * Sets the str currency.
 	 *
-	 * @param dsCurrency the new ds currency
+	 * @param strCurrency the new str currency
 	 */
-	public void setDsCurrency(String dsCurrency) {
-		this.dsCurrency = dsCurrency;
+	public void setDsCurrency(String strCurrency) {
+		this.strCurrency = strCurrency;
 	}
 
 	/**
-	 * Gets the ds description.
+	 * Gets the str description.
 	 *
-	 * @return the ds description
+	 * @return the str description
 	 */
 	public String getDsDescription() {
-		return dsDescription;
+		return strDescription;
 	}
 
 	/**
-	 * Sets the ds description.
+	 * Sets the str description.
 	 *
-	 * @param dsDescription the new ds description
+	 * @param strDescription the new str description
 	 */
-	public void setDsDescription(String dsDescription) {
-		this.dsDescription = dsDescription;
+	public void setDsDescription(String strDescription) {
+		this.strDescription = strDescription;
 	}
 
 	/**
-	 * Gets the ds device session id.
+	 * Gets the str device session id.
 	 *
-	 * @return the ds device session id
+	 * @return the str device session id
 	 */
 	public String getDsDeviceSessionId() {
-		return dsDeviceSessionId;
+		return strDeviceSessionId;
 	}
 
 	/**
-	 * Sets the ds device session id.
+	 * Sets the str device session id.
 	 *
-	 * @param dsDeviceSessionId the new ds device session id
+	 * @param strDeviceSessionId the new str device session id
 	 */
-	public void setDsDeviceSessionId(String dsDeviceSessionId) {
-		this.dsDeviceSessionId = dsDeviceSessionId;
+	public void setDsDeviceSessionId(String strDeviceSessionId) {
+		this.strDeviceSessionId = strDeviceSessionId;
 	}
 
 	/**
-	 * Gets the ds expiration date.
+	 * Gets the str expiration date.
 	 *
-	 * @return the ds expiration date
+	 * @return the str expiration date
 	 */
 	public String getDsExpirationDate() {
-		return dsExpirationDate;
+		return strExpirationDate;
 	}
 
 	/**
-	 * Sets the ds expiration date.
+	 * Sets the str expiration date.
 	 *
-	 * @param dsExpirationDate the new ds expiration date
+	 * @param strExpirationDate the new str expiration date
 	 */
-	public void setDsExpirationDate(String dsExpirationDate) {
-		this.dsExpirationDate = dsExpirationDate;
+	public void setDsExpirationDate(String strExpirationDate) {
+		this.strExpirationDate = strExpirationDate;
 	}
 
 	/**
-	 * Gets the ds installments number.
+	 * Gets the str installments number.
 	 *
-	 * @return the ds installments number
+	 * @return the str installments number
 	 */
 	public String getDsInstallmentsNumber() {
-		return dsInstallmentsNumber;
+		return strInstallmentsNumber;
 	}
 
 	/**
-	 * Sets the ds installments number.
+	 * Sets the str installments number.
 	 *
-	 * @param dsInstallmentsNumber the new ds installments number
+	 * @param strInstallmentsNumber the new str installments number
 	 */
-	public void setDsInstallmentsNumber(String dsInstallmentsNumber) {
-		this.dsInstallmentsNumber = dsInstallmentsNumber;
+	public void setDsInstallmentsNumber(String strInstallmentsNumber) {
+		this.strInstallmentsNumber = strInstallmentsNumber;
 	}
 
 	/**
-	 * Gets the ds IP address.
+	 * Gets the str IP address.
 	 *
-	 * @return the ds IP address
+	 * @return the str IP address
 	 */
 	public String getDsIPAddress() {
-		return dsIPAddress;
+		return strIPAddress;
 	}
 
 	/**
-	 * Sets the ds IP address.
+	 * Sets the str IP address.
 	 *
-	 * @param dsIPAddress the new ds IP address
+	 * @param strIPAddress the new str IP address
 	 */
-	public void setDsIPAddress(String dsIPAddress) {
-		this.dsIPAddress = dsIPAddress;
+	public void setDsIPAddress(String strIPAddress) {
+		this.strIPAddress = strIPAddress;
 	}
 
 	/**
-	 * Gets the ds language.
+	 * Gets the str language.
 	 *
-	 * @return the ds language
+	 * @return the str language
 	 */
 	public String getDsLanguage() {
-		return dsLanguage;
+		return strLanguage;
 	}
 
 	/**
-	 * Sets the ds language.
+	 * Sets the str language.
 	 *
-	 * @param dsLanguage the new ds language
+	 * @param strLanguage the new str language
 	 */
-	public void setDsLanguage(String dsLanguage) {
-		this.dsLanguage = dsLanguage;
+	public void setDsLanguage(String strLanguage) {
+		this.strLanguage = strLanguage;
 	}
 
 	/**
-	 * Gets the ds payer city.
+	 * Gets the str payer city.
 	 *
-	 * @return the ds payer city
+	 * @return the str payer city
 	 */
 	public String getDsPayerCity() {
-		return dsPayerCity;
+		return strPayerCity;
 	}
 
 	/**
-	 * Sets the ds payer city.
+	 * Sets the str payer city.
 	 *
-	 * @param dsPayerCity the new ds payer city
+	 * @param strPayerCity the new str payer city
 	 */
-	public void setDsPayerCity(String dsPayerCity) {
-		this.dsPayerCity = dsPayerCity;
+	public void setDsPayerCity(String strPayerCity) {
+		this.strPayerCity = strPayerCity;
 	}
 
 	/**
-	 * Gets the ds payer contact phone.
+	 * Gets the str payer contact phone.
 	 *
-	 * @return the ds payer contact phone
+	 * @return the str payer contact phone
 	 */
 	public String getDsPayerContactPhone() {
-		return dsPayerContactPhone;
+		return strPayerContactPhone;
 	}
 
 	/**
-	 * Sets the ds payer contact phone.
+	 * Sets the str payer contact phone.
 	 *
-	 * @param dsPayerContactPhone the new ds payer contact phone
+	 * @param strPayerContactPhone the new str payer contact phone
 	 */
-	public void setDsPayerContactPhone(String dsPayerContactPhone) {
-		this.dsPayerContactPhone = dsPayerContactPhone;
+	public void setDsPayerContactPhone(String strPayerContactPhone) {
+		this.strPayerContactPhone = strPayerContactPhone;
 	}
 
 	/**
-	 * Gets the ds payer country.
+	 * Gets the str payer country.
 	 *
-	 * @return the ds payer country
+	 * @return the str payer country
 	 */
 	public String getDsPayerCountry() {
-		return dsPayerCountry;
+		return strPayerCountry;
 	}
 
 	/**
-	 * Sets the ds payer country.
+	 * Sets the str payer country.
 	 *
-	 * @param dsPayerCountry the new ds payer country
+	 * @param strPayerCountry the new str payer country
 	 */
-	public void setDsPayerCountry(String dsPayerCountry) {
-		this.dsPayerCountry = dsPayerCountry;
+	public void setDsPayerCountry(String strPayerCountry) {
+		this.strPayerCountry = strPayerCountry;
 	}
 
 	/**
-	 * Gets the ds payer DNI.
+	 * Gets the str payer DNI.
 	 *
-	 * @return the ds payer DNI
+	 * @return the str payer DNI
 	 */
 	public String getDsPayerDNI() {
-		return dsPayerDNI;
+		return strPayerDNI;
 	}
 
 	/**
-	 * Sets the ds payer DNI.
+	 * Sets the str payer DNI.
 	 *
-	 * @param dsPayerDNI the new ds payer DNI
+	 * @param strPayerDNI the new str payer DNI
 	 */
-	public void setDsPayerDNI(String dsPayerDNI) {
-		this.dsPayerDNI = dsPayerDNI;
+	public void setDsPayerDNI(String strPayerDNI) {
+		this.strPayerDNI = strPayerDNI;
 	}
 
 	/**
-	 * Gets the ds payer document type.
+	 * Gets the str payer document type.
 	 *
-	 * @return the ds payer document type
+	 * @return the str payer document type
 	 */
 	public String getDsPayerDocumentType() {
-		return dsPayerDocumentType;
+		return strPayerDocumentType;
 	}
 
 	/**
-	 * Sets the ds payer document type.
+	 * Sets the str payer document type.
 	 *
-	 * @param dsPayerDocumentType the new ds payer document type
+	 * @param strPayerDocumentType the new str payer document type
 	 */
-	public void setDsPayerDocumentType(String dsPayerDocumentType) {
-		this.dsPayerDocumentType = dsPayerDocumentType;
+	public void setDsPayerDocumentType(String strPayerDocumentType) {
+		this.strPayerDocumentType = strPayerDocumentType;
 	}
 
 	/**
-	 * Gets the ds payer email.
+	 * Gets the str payer email.
 	 *
-	 * @return the ds payer email
+	 * @return the str payer email
 	 */
 	public String getDsPayerEmail() {
-		return dsPayerEmail;
+		return strPayerEmail;
 	}
 
 	/**
-	 * Sets the ds payer email.
+	 * Sets the str payer email.
 	 *
-	 * @param dsPayerEmail the new ds payer email
+	 * @param strPayerEmail the new str payer email
 	 */
-	public void setDsPayerEmail(String dsPayerEmail) {
-		this.dsPayerEmail = dsPayerEmail;
+	public void setDsPayerEmail(String strPayerEmail) {
+		this.strPayerEmail = strPayerEmail;
 	}
 
 	/**
-	 * Gets the ds payer id.
+	 * Gets the str payer id.
 	 *
-	 * @return the ds payer id
+	 * @return the str payer id
 	 */
 	public String getDsPayerId() {
-		return dsPayerId;
+		return strPayerId;
 	}
 
 	/**
-	 * Sets the ds payer id.
+	 * Sets the str payer id.
 	 *
-	 * @param dsPayerId the new ds payer id
+	 * @param strPayerId the new str payer id
 	 */
-	public void setDsPayerId(String dsPayerId) {
-		this.dsPayerId = dsPayerId;
+	public void setDsPayerId(String strPayerId) {
+		this.strPayerId = strPayerId;
 	}
 
 	/**
-	 * Gets the ds payer name.
+	 * Gets the str payer name.
 	 *
-	 * @return the ds payer name
+	 * @return the str payer name
 	 */
 	public String getDsPayerName() {
-		return dsPayerName;
+		return strPayerName;
 	}
 
 	/**
-	 * Sets the ds payer name.
+	 * Sets the str payer name.
 	 *
-	 * @param dsPayerName the new ds payer name
+	 * @param strPayerName the new str payer name
 	 */
-	public void setDsPayerName(String dsPayerName) {
-		this.dsPayerName = dsPayerName;
+	public void setDsPayerName(String strPayerName) {
+		this.strPayerName = strPayerName;
 	}
 
 	/**
-	 * Gets the ds payer person type.
+	 * Gets the str payer person type.
 	 *
-	 * @return the ds payer person type
+	 * @return the str payer person type
 	 */
 	public String getDsPayerPersonType() {
-		return dsPayerPersonType;
+		return strPayerPersonType;
 	}
 
 	/**
-	 * Sets the ds payer person type.
+	 * Sets the str payer person type.
 	 *
-	 * @param dsPayerPersonType the new ds payer person type
+	 * @param strPayerPersonType the new str payer person type
 	 */
-	public void setDsPayerPersonType(String dsPayerPersonType) {
-		this.dsPayerPersonType = dsPayerPersonType;
+	public void setDsPayerPersonType(String strPayerPersonType) {
+		this.strPayerPersonType = strPayerPersonType;
 	}
 
 	/**
-	 * Gets the ds payer phone.
+	 * Gets the str payer phone.
 	 *
-	 * @return the ds payer phone
+	 * @return the str payer phone
 	 */
 	public String getDsPayerPhone() {
-		return dsPayerPhone;
+		return strPayerPhone;
 	}
 
 	/**
-	 * Sets the ds payer phone.
+	 * Sets the str payer phone.
 	 *
-	 * @param dsPayerPhone the new ds payer phone
+	 * @param strPayerPhone the new str payer phone
 	 */
-	public void setDsPayerPhone(String dsPayerPhone) {
-		this.dsPayerPhone = dsPayerPhone;
+	public void setDsPayerPhone(String strPayerPhone) {
+		this.strPayerPhone = strPayerPhone;
 	}
 
 	/**
-	 * Gets the ds payer postal code.
+	 * Gets the str payer postal code.
 	 *
-	 * @return the ds payer postal code
+	 * @return the str payer postal code
 	 */
 	public String getDsPayerPostalCode() {
-		return dsPayerPostalCode;
+		return strPayerPostalCode;
 	}
 
 	/**
-	 * Sets the ds payer postal code.
+	 * Sets the str payer postal code.
 	 *
-	 * @param dsPayerPostalCode the new ds payer postal code
+	 * @param strPayerPostalCode the new str payer postal code
 	 */
-	public void setDsPayerPostalCode(String dsPayerPostalCode) {
-		this.dsPayerPostalCode = dsPayerPostalCode;
+	public void setDsPayerPostalCode(String strPayerPostalCode) {
+		this.strPayerPostalCode = strPayerPostalCode;
 	}
 
 	/**
-	 * Gets the ds payer state.
+	 * Gets the str payer state.
 	 *
-	 * @return the ds payer state
+	 * @return the str payer state
 	 */
 	public String getDsPayerState() {
-		return dsPayerState;
+		return strPayerState;
 	}
 
 	/**
-	 * Sets the ds payer state.
+	 * Sets the str payer state.
 	 *
-	 * @param dsPayerState the new ds payer state
+	 * @param strPayerState the new str payer state
 	 */
-	public void setDsPayerState(String dsPayerState) {
-		this.dsPayerState = dsPayerState;
+	public void setDsPayerState(String strPayerState) {
+		this.strPayerState = strPayerState;
 	}
 
 	/**
-	 * Gets the ds payer street.
+	 * Gets the str payer street.
 	 *
-	 * @return the ds payer street
+	 * @return the str payer street
 	 */
 	public String getDsPayerStreet() {
-		return dsPayerStreet;
+		return strPayerStreet;
 	}
 
 	/**
-	 * Sets the ds payer street.
+	 * Sets the str payer street.
 	 *
-	 * @param dsPayerStreet the new ds payer street
+	 * @param strPayerStreet the new str payer street
 	 */
-	public void setDsPayerStreet(String dsPayerStreet) {
-		this.dsPayerStreet = dsPayerStreet;
+	public void setDsPayerStreet(String strPayerStreet) {
+		this.strPayerStreet = strPayerStreet;
 	}
 
 	/**
-	 * Gets the ds payer street 2.
+	 * Gets the str payer street 2.
 	 *
-	 * @return the ds payer street 2
+	 * @return the str payer street 2
 	 */
 	public String getDsPayerStreet2() {
-		return dsPayerStreet2;
+		return strPayerStreet2;
 	}
 
 	/**
-	 * Sets the ds payer street 2.
+	 * Sets the str payer street 2.
 	 *
-	 * @param dsPayerStreet2 the new ds payer street 2
+	 * @param strPayerStreet2 the new str payer street 2
 	 */
-	public void setDsPayerStreet2(String dsPayerStreet2) {
-		this.dsPayerStreet2 = dsPayerStreet2;
+	public void setDsPayerStreet2(String strPayerStreet2) {
+		this.strPayerStreet2 = strPayerStreet2;
 	}
 
 	/**
-	 * Gets the ds payment method.
+	 * Gets the str payment method.
 	 *
-	 * @return the ds payment method
+	 * @return the str payment method
 	 */
 	public String getDsPaymentMethod() {
-		return dsPaymentMethod;
+		return strPaymentMethod;
 	}
 
 	/**
-	 * Sets the ds payment method.
+	 * Sets the str payment method.
 	 *
-	 * @param dsPaymentMethod the new ds payment method
+	 * @param strPaymentMethod the new str payment method
 	 */
-	public void setDsPaymentMethod(String dsPaymentMethod) {
-		this.dsPaymentMethod = dsPaymentMethod;
+	public void setDsPaymentMethod(String strPaymentMethod) {
+		this.strPaymentMethod = strPaymentMethod;
 	}
 
 	/**
-	 * Gets the ds reference code.
+	 * Gets the str reference code.
 	 *
-	 * @return the ds reference code
+	 * @return the str reference code
 	 */
 	public String getDsReferenceCode() {
-		return dsReferenceCode;
+		return strReferenceCode;
 	}
 
 	/**
-	 * Sets the ds reference code.
+	 * Sets the str reference code.
 	 *
-	 * @param dsReferenceCode the new ds reference code
+	 * @param strReferenceCode the new str reference code
 	 */
-	public void setDsReferenceCode(String dsReferenceCode) {
-		this.dsReferenceCode = dsReferenceCode;
+	public void setDsReferenceCode(String strReferenceCode) {
+		this.strReferenceCode = strReferenceCode;
 	}
 
 	/**
-	 * Gets the ds response url.
+	 * Gets the str response url.
 	 *
-	 * @return the ds response url
+	 * @return the str response url
 	 */
 	public String getDsResponseUrl() {
-		return dsResponseUrl;
+		return strResponseUrl;
 	}
 
 	/**
-	 * Sets the ds response url.
+	 * Sets the str response url.
 	 *
-	 * @param dsResponseUrl the new ds response url
+	 * @param strResponseUrl the new str response url
 	 */
-	public void setDsResponseUrl(String dsResponseUrl) {
-		this.dsResponseUrl = dsResponseUrl;
+	public void setDsResponseUrl(String strResponseUrl) {
+		this.strResponseUrl = strResponseUrl;
 	}
 
 	/**
-	 * Gets the ds user agent.
+	 * Gets the str user agent.
 	 *
-	 * @return the ds user agent
+	 * @return the str user agent
 	 */
 	public String getDsUserAgent() {
-		return dsUserAgent;
+		return strUserAgent;
 	}
 
 	/**
-	 * Sets the ds user agent.
+	 * Sets the str user agent.
 	 *
-	 * @param dsUserAgent the new ds user agent
+	 * @param strUserAgent the new str user agent
 	 */
-	public void setDsUserAgent(String dsUserAgent) {
-		this.dsUserAgent = dsUserAgent;
+	public void setDsUserAgent(String strUserAgent) {
+		this.strUserAgent = strUserAgent;
 	}
 
 	/**
-	 * Gets the ds value.
+	 * Gets the str value.
 	 *
-	 * @return the ds value
+	 * @return the str value
 	 */
 	public String getDsValue() {
-		return dsValue;
+		return strValue;
 	}
 
 	/**
-	 * Sets the ds value.
+	 * Sets the str value.
 	 *
-	 * @param dsValue the new ds value
+	 * @param strValue the new str value
 	 */
-	public void setDsValue(String dsValue) {
-		this.dsValue = dsValue;
+	public void setDsValue(String strValue) {
+		this.strValue = strValue;
 	}
 }

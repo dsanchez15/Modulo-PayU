@@ -12,222 +12,114 @@ package co.payU.dto;
 public class PersonaDto {
 	
 	/** The Payer name. */
-	private String PayerName;
+	private String strName;
 	
 	/** The Payer DNI. */
-	private String PayerDNI;
+	private String strDNI;
 	
 	/** The Payer street. */
-	private String PayerStreet;
+	private String strStreet;
 	
 	/** The Payer street 2. */
-	private String PayerStreet2;
+	private String strStreet2;
 	
 	/** The Payer street 3. */
-	private String PayerStreet3;
+	private String strStreet3;
 	
 	/** The Payer city. */
-	private String PayerCity;
+	private String strCity;
 	
 	/** The Payer state. */
-	private String PayerState;
+	private String strState;
 	
 	/** The Payer country. */
-	private String PayerCountry;
+	private String strCountry;
 	
 	/** The Payer postal code. */
-	private String PayerPostalCode;
+	private String strPostalCode;
 	
 	/** The Payer phone. */
-	private String PayerPhone;
-	
-	/**
-	 * Gets the payer name.
-	 *
-	 * @return the payer name
-	 */
-	public String getPayerName() {
-		return PayerName;
+	private String strPhone;
+
+	public String getDsName() {
+		return strName;
+	}
+
+	public void setDsName(String strName) {
+		this.strName = strName;
+	}
+
+	public String getDsDNI() {
+		return strDNI;
+	}
+
+	public void setDsDNI(String strDNI) {
+		this.strDNI = strDNI;
+	}
+
+	public String getDsStreet() {
+		return strStreet;
+	}
+
+	public void setDsStreet(String strStreet) {
+		this.strStreet = strStreet;
+	}
+
+	public String getDsStreet2() {
+		return strStreet2;
+	}
+
+	public void setDsStreet2(String strStreet2) {
+		this.strStreet2 = strStreet2;
+	}
+
+	public String getDsStreet3() {
+		return strStreet3;
+	}
+
+	public void setDsStreet3(String strStreet3) {
+		this.strStreet3 = strStreet3;
+	}
+
+	public String getDsCity() {
+		return strCity;
+	}
+
+	public void setDsCity(String strCity) {
+		this.strCity = strCity;
+	}
+
+	public String getDsState() {
+		return strState;
+	}
+
+	public void setDsState(String strState) {
+		this.strState = strState;
+	}
+
+	public String getDsCountry() {
+		return strCountry;
+	}
+
+	public void setDsCountry(String strCountry) {
+		this.strCountry = strCountry;
+	}
+
+	public String getDsPostalCode() {
+		return strPostalCode;
+	}
+
+	public void setDsPostalCode(String strPostalCode) {
+		this.strPostalCode = strPostalCode;
+	}
+
+	public String getDsPhone() {
+		return strPhone;
+	}
+
+	public void setDsPhone(String strPhone) {
+		this.strPhone = strPhone;
 	}
 	
-	/**
-	 * Sets the payer name.
-	 *
-	 * @param payerName
-	 *            the new payer name
-	 */
-	public void setPayerName(String payerName) {
-		PayerName = payerName;
-	}
 	
-	/**
-	 * Gets the payer DNI.
-	 *
-	 * @return the payer DNI
-	 */
-	public String getPayerDNI() {
-		return PayerDNI;
-	}
-	
-	/**
-	 * Sets the payer DNI.
-	 *
-	 * @param payerDNI
-	 *            the new payer DNI
-	 */
-	public void setPayerDNI(String payerDNI) {
-		PayerDNI = payerDNI;
-	}
-	
-	/**
-	 * Gets the payer street.
-	 *
-	 * @return the payer street
-	 */
-	public String getPayerStreet() {
-		return PayerStreet;
-	}
-	
-	/**
-	 * Sets the payer street.
-	 *
-	 * @param payerStreet
-	 *            the new payer street
-	 */
-	public void setPayerStreet(String payerStreet) {
-		PayerStreet = payerStreet;
-	}
-	
-	/**
-	 * Gets the payer street 2.
-	 *
-	 * @return the payer street 2
-	 */
-	public String getPayerStreet2() {
-		return PayerStreet2;
-	}
-	
-	/**
-	 * Sets the payer street 2.
-	 *
-	 * @param payerStreet2
-	 *            the new payer street 2
-	 */
-	public void setPayerStreet2(String payerStreet2) {
-		PayerStreet2 = payerStreet2;
-	}
-	
-	/**
-	 * Gets the payer street 3.
-	 *
-	 * @return the payer street 3
-	 */
-	public String getPayerStreet3() {
-		return PayerStreet3;
-	}
-	
-	/**
-	 * Sets the payer street 3.
-	 *
-	 * @param payerStreet3
-	 *            the new payer street 3
-	 */
-	public void setPayerStreet3(String payerStreet3) {
-		PayerStreet3 = payerStreet3;
-	}
-	
-	/**
-	 * Gets the payer city.
-	 *
-	 * @return the payer city
-	 */
-	public String getPayerCity() {
-		return PayerCity;
-	}
-	
-	/**
-	 * Sets the payer city.
-	 *
-	 * @param payerCity
-	 *            the new payer city
-	 */
-	public void setPayerCity(String payerCity) {
-		PayerCity = payerCity;
-	}
-	
-	/**
-	 * Gets the payer state.
-	 *
-	 * @return the payer state
-	 */
-	public String getPayerState() {
-		return PayerState;
-	}
-	
-	/**
-	 * Sets the payer state.
-	 *
-	 * @param payerState
-	 *            the new payer state
-	 */
-	public void setPayerState(String payerState) {
-		PayerState = payerState;
-	}
-	
-	/**
-	 * Gets the payer country.
-	 *
-	 * @return the payer country
-	 */
-	public String getPayerCountry() {
-		return PayerCountry;
-	}
-	
-	/**
-	 * Sets the payer country.
-	 *
-	 * @param payerCountry
-	 *            the new payer country
-	 */
-	public void setPayerCountry(String payerCountry) {
-		PayerCountry = payerCountry;
-	}
-	
-	/**
-	 * Gets the payer postal code.
-	 *
-	 * @return the payer postal code
-	 */
-	public String getPayerPostalCode() {
-		return PayerPostalCode;
-	}
-	
-	/**
-	 * Sets the payer postal code.
-	 *
-	 * @param payerPostalCode
-	 *            the new payer postal code
-	 */
-	public void setPayerPostalCode(String payerPostalCode) {
-		PayerPostalCode = payerPostalCode;
-	}
-	
-	/**
-	 * Gets the payer phone.
-	 *
-	 * @return the payer phone
-	 */
-	public String getPayerPhone() {
-		return PayerPhone;
-	}
-	
-	/**
-	 * Sets the payer phone.
-	 *
-	 * @param payerPhone
-	 *            the new payer phone
-	 */
-	public void setPayerPhone(String payerPhone) {
-		PayerPhone = payerPhone;
-	}
 }
