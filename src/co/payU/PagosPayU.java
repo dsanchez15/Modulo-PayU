@@ -2,13 +2,16 @@ package co.payU;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.logging.Level;
 
 import com.payu.sdk.PayU;
 import com.payu.sdk.PayUPayments;
 import com.payu.sdk.exceptions.ConnectionException;
 import com.payu.sdk.exceptions.InvalidParametersException;
 import com.payu.sdk.exceptions.PayUException;
+import com.payu.sdk.model.Language;
 import com.payu.sdk.model.TransactionResponse;
+import com.payu.sdk.utils.LoggerUtil;
 
 import co.excepciones.ExcepcionesPayU;
 import co.payU.dto.PagoDto;
@@ -22,13 +25,27 @@ import co.payU.interfaces.IPagos;
  * 27 de jun. de 2016 10:47:04
  */
 public class PagosPayU implements IPagos {
+	
+	/**
+	 * 
+	 */
+	public PagosPayU() {
+		PayU.paymentsUrl = "https://sandbox.api.payulatam.com/payments-api/";
+		PayU.reportsUrl = "https://sandbox.api.payulatam.com/reports-api/";
+		PayU.apiKey = "4Vj8eK4rloUd272L48hsrarnUA"; //Ingresa aquí tu apiKey.
+		PayU.apiLogin = "pRRXKOl8ikMmt9u"; //Ingresa aquí tu apiLogin.
+		PayU.language = Language.es; //Ingresa aquí el idioma que prefieras.
+		PayU.isTest = false; //Dejarlo verdadero cuando sean pruebas.
+		LoggerUtil.setLogLevel(Level.ALL); //Incluirlo únicamente si desea ver toda la traza del log; si solo se desea ver la respuesta, se puede eliminar.
+		PayU.merchantId = "508029";
+	}
 
 	/* (non-Javadoc)
 	 * @see co.payU.interfaces.IPagos#pagoXTarjetaCredito(co.payU.dto.PagoDto)
 	 */
 	@Override
 	public TransactionResponse pagoXTarjetaCredito(PagoDto pago) throws ExcepcionesPayU {
-
+		
 		Map<String, String> parametros = new HashMap<String, String>();
 
 		//Ingrese aquí el identificador de la cuenta.
@@ -124,6 +141,7 @@ public class PagosPayU implements IPagos {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		System.out.println(response);
 		return response;
 	}
 
