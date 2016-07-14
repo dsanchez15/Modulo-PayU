@@ -13,7 +13,7 @@ import com.payu.sdk.model.Language;
 import com.payu.sdk.model.TransactionResponse;
 import com.payu.sdk.utils.LoggerUtil;
 
-import co.excepciones.ExcepcionesPayU;
+import co.desarrollo.exception.ExceptionPayU;
 import co.payU.dto.PagoDto;
 import co.payU.interfaces.IPagos;
 
@@ -43,8 +43,8 @@ public class PagosPayU implements IPagos {
 	/* (non-Javadoc)
 	 * @see co.payU.interfaces.IPagos#pagoXTarjetaCredito(co.payU.dto.PagoDto)
 	 */
-	@Override
-	public TransactionResponse pagoXTarjetaCredito(PagoDto pago) throws ExcepcionesPayU {
+	
+	public TransactionResponse pagoXTarjetaCredito(PagoDto pago) throws ExceptionPayU {
 		
 		Map<String, String> parametros = new HashMap<String, String>();
 
@@ -148,8 +148,8 @@ public class PagosPayU implements IPagos {
 	/* (non-Javadoc)
 	 * @see co.payU.interfaces.IPagos#pagoXPSE(co.payU.dto.PagoDto)
 	 */
-	@Override
-	public TransactionResponse pagoXPSE(PagoDto pago) throws ExcepcionesPayU {
+	
+	public TransactionResponse pagoXPSE(PagoDto pago) throws ExceptionPayU {
 
 		Map<String, String> parametros = new HashMap<String, String>();
 
@@ -206,8 +206,8 @@ public class PagosPayU implements IPagos {
 	/* (non-Javadoc)
 	 * @see co.payU.interfaces.IPagos#pagoXBalotoEfecty(co.payU.dto.PagoDto)
 	 */
-	@Override
-	public TransactionResponse pagoXBalotoEfecty(PagoDto pago) throws ExcepcionesPayU {
+	
+	public TransactionResponse pagoXBalotoEfecty(PagoDto pago) throws ExceptionPayU {
 
 		Map<String, String> parameters = new HashMap<String, String>();
 

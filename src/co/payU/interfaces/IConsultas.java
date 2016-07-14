@@ -4,7 +4,8 @@ import java.util.List;
 
 import com.payu.sdk.model.Order;
 import com.payu.sdk.model.TransactionResponse;
-import co.excepciones.ExcepcionesPayU;
+
+import co.desarrollo.exception.ExceptionPayU;
 
 /**
  * The Interface IConsultas.
@@ -22,7 +23,7 @@ public interface IConsultas {
 	 * @return the order
 	 * @throws ExcepcionesPayU the excepciones pay U
 	 */
-	public Order ordenXIdentificacion(String orderId) throws ExcepcionesPayU;
+	public Order ordenXIdentificacion(String orderId) throws ExceptionPayU;
 
 	/**
 	 * Orden X referencia.
@@ -31,7 +32,7 @@ public interface IConsultas {
 	 * @return the list
 	 * @throws ExcepcionesPayU the excepciones pay U
 	 */
-	public List<Order> ordenXReferencia(String referenceCode) throws ExcepcionesPayU;
+	public List<Order> ordenXReferencia(String referenceCode) throws ExceptionPayU;
 
 	/**
 	 * Respuesta transaccion.
@@ -40,5 +41,5 @@ public interface IConsultas {
 	 * @return the transaction response
 	 * @throws ExcepcionesPayU the excepciones pay U
 	 */
-	public TransactionResponse respuestaTransaccion(String transactionId) throws ExcepcionesPayU;	
+	public TransactionResponse respuestaTransaccion(String transactionId) throws ExceptionPayU;	
 }

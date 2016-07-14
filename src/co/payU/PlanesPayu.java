@@ -13,7 +13,7 @@ import com.payu.sdk.exceptions.InvalidParametersException;
 import com.payu.sdk.exceptions.PayUException;
 import com.payu.sdk.paymentplan.model.SubscriptionPlan;
 
-import co.excepciones.ExcepcionesPayU;
+import co.desarrollo.exception.ExceptionPayU;
 import co.payU.dto.PlanDto;
 import co.payU.interfaces.IPlanes;
 
@@ -29,8 +29,8 @@ public class PlanesPayu implements IPlanes {
 	/* (non-Javadoc)
 	 * @see co.payU.interfaces.IPlanes#createPlan(co.dto.PlanDto)
 	 */
-	@Override
-	public SubscriptionPlan createPlan(PlanDto plan) throws ExcepcionesPayU {
+	
+	public SubscriptionPlan createPlan(PlanDto plan) throws ExceptionPayU {
 
 		Map<String, String> parameters = new HashMap<String, String>();
 		// Ingresa aquí la descripción del plan
@@ -59,11 +59,11 @@ public class PlanesPayu implements IPlanes {
 		try {
 			response = PayUPlans.create(parameters);
 		} catch (PayUException e) {
-			throw new ExcepcionesPayU("Error proveniente de PayUException: "+e.getMessage());
+			throw new ExceptionPayU("Error proveniente de PayUException: "+e.getMessage());
 		} catch (InvalidParametersException e) {
-			throw new ExcepcionesPayU(e.getStackTrace().toString());
+			throw new ExceptionPayU(e.getStackTrace().toString());
 		} catch (ConnectionException e) {
-			throw new ExcepcionesPayU(e.getMessage(), e.fillInStackTrace());
+			throw new ExceptionPayU(e.getMessage(), e.fillInStackTrace());
 		}
 		return response;
 	}
@@ -71,8 +71,8 @@ public class PlanesPayu implements IPlanes {
 	/* (non-Javadoc)
 	 * @see co.payU.interfaces.IPlanes#updatePlan(co.dto.PlanDto)
 	 */
-	@Override
-	public SubscriptionPlan updatePlan(PlanDto plan) throws ExcepcionesPayU {
+	
+	public SubscriptionPlan updatePlan(PlanDto plan) throws ExceptionPayU {
 
 		Map<String, String> parameters = new HashMap<String, String>();
 		// Ingrese aquí la nueva descripción para el plan
@@ -108,8 +108,8 @@ public class PlanesPayu implements IPlanes {
 	/* (non-Javadoc)
 	 * @see co.payU.interfaces.IPlanes#seePlan(java.lang.String)
 	 */
-	@Override
-	public SubscriptionPlan seePlan(String planCode) throws ExcepcionesPayU {
+	
+	public SubscriptionPlan seePlan(String planCode) throws ExceptionPayU {
 		Map<String, String> parameters = new HashMap<String, String>();
 		//Ingrese aquí el código del plan
 		parameters.put(PayU.PARAMETERS.PLAN_CODE, planCode);
@@ -132,8 +132,8 @@ public class PlanesPayu implements IPlanes {
 	/* (non-Javadoc)
 	 * @see co.payU.interfaces.IPlanes#deletePlan(java.lang.String)
 	 */
-	@Override
-	public boolean deletePlan(String planCode) throws ExcepcionesPayU {
+	
+	public boolean deletePlan(String planCode) throws ExceptionPayU {
 		Map<String, String> parameters = new HashMap<String, String>();
 		// Ingrese aquí el código del plan
 		parameters.put(PayU.PARAMETERS.PLAN_CODE, planCode);

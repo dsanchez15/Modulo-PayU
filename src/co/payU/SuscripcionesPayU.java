@@ -14,7 +14,7 @@ import com.payu.sdk.exceptions.InvalidParametersException;
 import com.payu.sdk.exceptions.PayUException;
 import com.payu.sdk.paymentplan.model.Subscription;
 
-import co.excepciones.ExcepcionesPayU;
+import co.desarrollo.exception.ExceptionPayU;
 import co.payU.dto.SuscripcionDto;
 import co.payU.interfaces.ISuscripciones;
 
@@ -31,8 +31,7 @@ public class SuscripcionesPayU implements ISuscripciones {
 	 * (non-Javadoc)
 	 * @see co.payU.interfaces.ISuscripciones#createSubscriptionAllNew(co.payU.dto.SuscripcionDto)
 	 */
-	@Override
-	public Subscription createSubscriptionAllNew(SuscripcionDto suscripcion) throws ExcepcionesPayU {
+	public Subscription createSubscriptionAllNew(SuscripcionDto suscripcion) throws ExceptionPayU {
 		Map<String, String> parameters = new HashMap<String, String>();
 		// Ingresa aquí el número de cuotas a pagar.
 		parameters.put(PayU.PARAMETERS.INSTALLMENTS_NUMBER, suscripcion.getDsInstallmentsNumber());
@@ -106,9 +105,13 @@ public class SuscripcionesPayU implements ISuscripciones {
 		Subscription response =null;
 		try {
 			response = PayUSubscription.create(parameters);
-		} catch (PayUException | InvalidParametersException | ConnectionException e) {
+		} catch (InvalidParametersException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+		} catch (ConnectionException e) {
+			// TODO: handle exception
+		} catch (PayUException e) {
+			// TODO: handle exception
 		}
 		return response;
 	}
@@ -116,8 +119,7 @@ public class SuscripcionesPayU implements ISuscripciones {
 	/* (non-Javadoc)
 	 * @see co.payU.interfaces.ISuscripciones#createSubscriptionAllExists(co.payU.dto.SuscripcionDto)
 	 */
-	@Override
-	public Subscription createSubscriptionAllExists(SuscripcionDto suscripcion) throws ExcepcionesPayU {
+	public Subscription createSubscriptionAllExists(SuscripcionDto suscripcion) throws ExceptionPayU {
 		Map<String, String> parameters = new HashMap<String, String>();
 		// Ingresa aquí el código del plan a suscribirse.
 		parameters.put(PayU.PARAMETERS.PLAN_CODE, suscripcion.getDsPlanCode());
@@ -132,9 +134,13 @@ public class SuscripcionesPayU implements ISuscripciones {
 		Subscription response = null;
 		try {
 			response = PayUSubscription.create(parameters);
-		} catch (PayUException | InvalidParametersException | ConnectionException e) {
+		} catch (InvalidParametersException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+		} catch (ConnectionException e) {
+			// TODO: handle exception
+		} catch (PayUException e) {
+			// TODO: handle exception
 		}
 		return response;
 	}
@@ -142,8 +148,7 @@ public class SuscripcionesPayU implements ISuscripciones {
 	/* (non-Javadoc)
 	 * @see co.payU.interfaces.ISuscripciones#createSubscriptionNewCreditCard(co.payU.dto.SuscripcionDto)
 	 */
-	@Override
-	public Subscription createSubscriptionNewCreditCard(SuscripcionDto suscripcion) throws ExcepcionesPayU {
+	public Subscription createSubscriptionNewCreditCard(SuscripcionDto suscripcion) throws ExceptionPayU {
 		Map<String, String> parameters = new HashMap<String, String>();
 		// Ingresa aquí la cantidad de días de prueba de la suscripción.
 		parameters.put(PayU.PARAMETERS.TRIAL_DAYS, suscripcion.getDsTrialDays());
@@ -188,9 +193,13 @@ public class SuscripcionesPayU implements ISuscripciones {
 		Subscription response = null;
 		try {
 			response = PayUSubscription.create(parameters);
-		} catch (PayUException | InvalidParametersException | ConnectionException e) {
+		} catch (InvalidParametersException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+		} catch (ConnectionException e) {
+			// TODO: handle exception
+		} catch (PayUException e) {
+			// TODO: handle exception
 		}
 		return response;
 	}
@@ -198,8 +207,7 @@ public class SuscripcionesPayU implements ISuscripciones {
 	/* (non-Javadoc)
 	 * @see co.payU.interfaces.ISuscripciones#createSubscriptionNewPlan(co.payU.dto.SuscripcionDto)
 	 */
-	@Override
-	public Subscription createSubscriptionNewPlan(SuscripcionDto suscripcion) throws ExcepcionesPayU {
+	public Subscription createSubscriptionNewPlan(SuscripcionDto suscripcion) throws ExceptionPayU {
 		Map<String, String> parameters = new HashMap<String, String>();
 		// Ingresa aquí el número de cuotas a pagar.
 		parameters.put(PayU.PARAMETERS.INSTALLMENTS_NUMBER, suscripcion.getDsInstallmentsNumber());
@@ -242,9 +250,13 @@ public class SuscripcionesPayU implements ISuscripciones {
 		Subscription response = null;
 		try {
 			response = PayUSubscription.create(parameters);
-		} catch (PayUException | InvalidParametersException | ConnectionException e) {
+		} catch (InvalidParametersException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+		} catch (ConnectionException e) {
+			// TODO: handle exception
+		} catch (PayUException e) {
+			// TODO: handle exception
 		}
 		return response;
 	}
@@ -252,8 +264,7 @@ public class SuscripcionesPayU implements ISuscripciones {
 	/* (non-Javadoc)
 	 * @see co.payU.interfaces.ISuscripciones#updateSubscriptionCreditCard(co.payU.dto.SuscripcionDto)
 	 */
-	@Override
-	public Subscription updateSubscriptionCreditCard(SuscripcionDto suscripcion) throws ExcepcionesPayU {
+	public Subscription updateSubscriptionCreditCard(SuscripcionDto suscripcion) throws ExceptionPayU {
 		// TODO Auto-generated method stub
 		return null;
 	}
@@ -261,8 +272,7 @@ public class SuscripcionesPayU implements ISuscripciones {
 	/* (non-Javadoc)
 	 * @see co.payU.interfaces.ISuscripciones#seeSubscription(java.lang.String)
 	 */
-	@Override
-	public Subscription seeSubscription(String subscriptionId) throws ExcepcionesPayU {
+	public Subscription seeSubscription(String subscriptionId) throws ExceptionPayU {
 		Map<String, String> parameters = new HashMap<String, String>();
 		// Ingresa aquí el ID de la suscripción.
 		parameters.put(PayU.PARAMETERS.SUBSCRIPTION_ID, subscriptionId);
@@ -270,9 +280,13 @@ public class SuscripcionesPayU implements ISuscripciones {
 		Subscription response = null;
 		try {
 			response = PayUSubscription.find(parameters);
-		} catch (PayUException | InvalidParametersException | ConnectionException e) {
+		} catch (InvalidParametersException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+		} catch (ConnectionException e) {
+			// TODO: handle exception
+		} catch (PayUException e) {
+			// TODO: handle exception
 		}
 		return response;
 	}
@@ -280,17 +294,20 @@ public class SuscripcionesPayU implements ISuscripciones {
 	/* (non-Javadoc)
 	 * @see co.payU.interfaces.ISuscripciones#seeAllSubscriptions()
 	 */
-	@Override
-	public List<Subscription> seeAllSubscriptions() throws ExcepcionesPayU {
+	public List<Subscription> seeAllSubscriptions() throws ExceptionPayU {
 		Map<String, String> parameters = new HashMap<String, String>();
 		parameters.put(PayU.PARAMETERS.SUBSCRIPTION_ID, "");
 
 		List<Subscription> response = null;
 		try {
 			response = PayUSubscription.findList(parameters);
-		} catch (PayUException | InvalidParametersException | ConnectionException e) {
+		} catch (InvalidParametersException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+		} catch (ConnectionException e) {
+			// TODO: handle exception
+		} catch (PayUException e) {
+			// TODO: handle exception
 		}
 		return response;
 	}
@@ -298,17 +315,20 @@ public class SuscripcionesPayU implements ISuscripciones {
 	/* (non-Javadoc)
 	 * @see co.payU.interfaces.ISuscripciones#seeAllSubscriptionByPlan(java.lang.String)
 	 */
-	@Override
-	public List<Subscription> seeAllSubscriptionByPlan(String planId) throws ExcepcionesPayU {
+	public List<Subscription> seeAllSubscriptionByPlan(String planId) throws ExceptionPayU {
 		Map<String, String> parameters = new HashMap<String, String>();
 		parameters.put(PayU.PARAMETERS.PLAN_ID, planId);
 
 		List<Subscription> response = null;
 		try {
 			response = PayUSubscription.findList(parameters);
-		} catch (PayUException | InvalidParametersException | ConnectionException e) {
+		} catch (InvalidParametersException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+		} catch (ConnectionException e) {
+			// TODO: handle exception
+		} catch (PayUException e) {
+			// TODO: handle exception
 		}
 		return response;
 	}
@@ -316,17 +336,20 @@ public class SuscripcionesPayU implements ISuscripciones {
 	/* (non-Javadoc)
 	 * @see co.payU.interfaces.ISuscripciones#seeAllSubscriptionByCustomer(java.lang.String)
 	 */
-	@Override
-	public List<Subscription> seeAllSubscriptionByCustomer(String customerId) throws ExcepcionesPayU {
+	public List<Subscription> seeAllSubscriptionByCustomer(String customerId) throws ExceptionPayU {
 		Map<String, String> parameters = new HashMap<String, String>();
 		parameters.put(PayU.PARAMETERS.CUSTOMER_ID, customerId);
 
 		List<Subscription> response = null;
 		try {
 			response = PayUSubscription.findList(parameters);
-		} catch (PayUException | InvalidParametersException | ConnectionException e) {
+		} catch (InvalidParametersException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+		} catch (ConnectionException e) {
+			// TODO: handle exception
+		} catch (PayUException e) {
+			// TODO: handle exception
 		}
 		return response;
 	}
@@ -334,17 +357,20 @@ public class SuscripcionesPayU implements ISuscripciones {
 	/* (non-Javadoc)
 	 * @see co.payU.interfaces.ISuscripciones#deleteSubscription(java.lang.String)
 	 */
-	@Override
-	public boolean deleteSubscription(String subscriptionId) throws ExcepcionesPayU {
+	public boolean deleteSubscription(String subscriptionId) throws ExceptionPayU {
 		Map<String, String> parameters = new HashMap<String, String>();
 		// Ingresa aquí el identifcador de la subscripción.
 		parameters.put(PayU.PARAMETERS.SUBSCRIPTION_ID, subscriptionId);
 		boolean response = false;
 		try {
 			response = PayUSubscription.cancel(parameters);
-		} catch (InvalidParametersException | ConnectionException | PayUException e) {
+		} catch (InvalidParametersException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+		} catch (ConnectionException e) {
+			// TODO: handle exception
+		} catch (PayUException e) {
+			// TODO: handle exception
 		}
 		return response;
 	}

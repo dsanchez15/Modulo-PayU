@@ -5,7 +5,6 @@ package co.negocio;
 
 import com.payu.sdk.model.TransactionResponse;
 
-import co.excepciones.ExcepcionesPayU;
 import co.payU.PagosPayU;
 import co.payU.dto.PagoDto;
 
@@ -19,7 +18,7 @@ public class PagosClassNgcImpl implements co.negocio.interfaces.PagosClassNgc {
 	private PagosPayU PagosPayU = new PagosPayU();
 	private PagoDto pd = new PagoDto();
 	
-	@Override
+	
 	public boolean guardarPago() {
 		/*
 		 * Se asume que un usuario esta inscrito en el sistema asi que habran varios datos que no se pediran a nadie mas.

@@ -2,7 +2,7 @@ package co.payU.interfaces;
 
 import com.payu.sdk.model.TransactionResponse;
 
-import co.excepciones.ExcepcionesPayU;
+import co.desarrollo.exception.ExceptionPayU;
 import co.payU.dto.PagoDto;
 
 /**
@@ -21,7 +21,7 @@ public interface IPagos {
 	 * @return the transaction response
 	 * @throws ExcepcionesPayU the excepciones pay U
 	 */
-	public TransactionResponse pagoXTarjetaCredito(PagoDto pago) throws ExcepcionesPayU;
+	public TransactionResponse pagoXTarjetaCredito(PagoDto pago) throws ExceptionPayU;
 
 	/**
 	 * Pago XPSE.
@@ -30,7 +30,7 @@ public interface IPagos {
 	 * @return the transaction response
 	 * @throws ExcepcionesPayU the excepciones pay U
 	 */
-	public TransactionResponse pagoXPSE(PagoDto pago) throws ExcepcionesPayU;
+	public TransactionResponse pagoXPSE(PagoDto pago) throws ExceptionPayU;
 
 	/**
 	 * Pago X baloto efecty.
@@ -39,5 +39,5 @@ public interface IPagos {
 	 * @return the transaction response
 	 * @throws ExcepcionesPayU the excepciones pay U
 	 */
-	public TransactionResponse pagoXBalotoEfecty(PagoDto pago) throws ExcepcionesPayU;
+	public TransactionResponse pagoXBalotoEfecty(PagoDto pago) throws ExceptionPayU;
 }

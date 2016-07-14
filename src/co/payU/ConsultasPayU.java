@@ -12,24 +12,24 @@ import com.payu.sdk.exceptions.PayUException;
 import com.payu.sdk.model.Order;
 import com.payu.sdk.model.TransactionResponse;
 
-import co.excepciones.ExcepcionesPayU;
+import co.desarrollo.exception.ExceptionPayU;
 import co.payU.interfaces.IConsultas;
 
 /**
  * The Class ConsultasPayU.
  *
  * @author Duvan A. Sanchez
- * @version 1.0.0
- * 27 de jun. de 2016 10:47:38
+ * @version 1.0.0 27 de jun. de 2016 10:47:38
  * 
  */
-public class ConsultasPayU implements IConsultas{
+public class ConsultasPayU implements IConsultas {
 
-	/* (non-Javadoc)
+	/*
+	 * (non-Javadoc)
+	 * 
 	 * @see co.payU.interfaces.IConsultas#ordenXIdentificacion(java.lang.String)
 	 */
-	@Override
-	public Order ordenXIdentificacion(String orderId) throws ExcepcionesPayU {
+	public Order ordenXIdentificacion(String orderId) throws ExceptionPayU {
 
 		Map<String, String> parameters = new HashMap<String, String>();
 
@@ -47,19 +47,20 @@ public class ConsultasPayU implements IConsultas{
 		} catch (InvalidParametersException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		} 
+		}
 
 		return response;
 	}
 
-	/* (non-Javadoc)
+	/*
+	 * (non-Javadoc)
+	 * 
 	 * @see co.payU.interfaces.IConsultas#ordenXReferencia(java.lang.String)
 	 */
-	@Override
-	public List<Order> ordenXReferencia(String referenceCode) throws ExcepcionesPayU {
+	public List<Order> ordenXReferencia(String referenceCode) throws ExceptionPayU {
 		Map<String, String> parameters = new HashMap<String, String>();
 
-		//Ingresa aquí el código de referencia de la orden.
+		// Ingresa aquí el código de referencia de la orden.
 		parameters.put(PayU.PARAMETERS.REFERENCE_CODE, referenceCode);
 
 		List<Order> orders_response = null;
@@ -78,14 +79,15 @@ public class ConsultasPayU implements IConsultas{
 		return orders_response;
 	}
 
-	/* (non-Javadoc)
+	/*
+	 * (non-Javadoc)
+	 * 
 	 * @see co.payU.interfaces.IConsultas#respuestaTransaccion(java.lang.String)
 	 */
-	@Override
-	public TransactionResponse respuestaTransaccion(String transactionId) throws ExcepcionesPayU {
+	public TransactionResponse respuestaTransaccion(String transactionId) throws ExceptionPayU {
 		Map<String, String> parameters = new HashMap<String, String>();
 
-		//Ingresa aquí el identificador de la transacción.
+		// Ingresa aquí el identificador de la transacción.
 		parameters.put(PayU.PARAMETERS.TRANSACTION_ID, transactionId);
 
 		TransactionResponse response = null;
@@ -100,7 +102,7 @@ public class ConsultasPayU implements IConsultas{
 		} catch (InvalidParametersException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		} 
+		}
 		return response;
 	}
 }

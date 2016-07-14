@@ -7,7 +7,7 @@ import java.util.List;
 
 import com.payu.sdk.paymentplan.model.Subscription;
 
-import co.excepciones.ExcepcionesPayU;
+import co.desarrollo.exception.ExceptionPayU;
 import co.payU.dto.SuscripcionDto;
 
 /**
@@ -26,7 +26,7 @@ public interface ISuscripciones {
 	 * @return Respuesta de PayU con la verificación de la suscripcion del cliente.
 	 * @throws ExcepcionesPayU the excepciones pay U
 	 */
-	public Subscription createSubscriptionAllNew(SuscripcionDto suscripcion) throws ExcepcionesPayU;
+	public Subscription createSubscriptionAllNew(SuscripcionDto suscripcion) throws ExceptionPayU;
 
 	/**
 	 * Creates the subscription all exists.
@@ -35,7 +35,7 @@ public interface ISuscripciones {
 	 * @return the subscription
 	 * @throws ExcepcionesPayU the excepciones pay U
 	 */
-	public Subscription createSubscriptionAllExists(SuscripcionDto suscripcion) throws ExcepcionesPayU;
+	public Subscription createSubscriptionAllExists(SuscripcionDto suscripcion) throws ExceptionPayU;
 
 	/**
 	 * Creates the subscription new credit card.
@@ -44,7 +44,7 @@ public interface ISuscripciones {
 	 * @return the subscription
 	 * @throws ExcepcionesPayU the excepciones pay U
 	 */
-	public Subscription createSubscriptionNewCreditCard(SuscripcionDto suscripcion) throws ExcepcionesPayU;
+	public Subscription createSubscriptionNewCreditCard(SuscripcionDto suscripcion) throws ExceptionPayU;
 
 	/**
 	 * Creates the subscription new plan.
@@ -53,7 +53,7 @@ public interface ISuscripciones {
 	 * @return the subscription
 	 * @throws ExcepcionesPayU the excepciones pay U
 	 */
-	public Subscription createSubscriptionNewPlan(SuscripcionDto suscripcion) throws ExcepcionesPayU;
+	public Subscription createSubscriptionNewPlan(SuscripcionDto suscripcion) throws ExceptionPayU;
 
 	// Que otras actualizaciones se pueden hacer y de que forma??
 	/**
@@ -63,7 +63,7 @@ public interface ISuscripciones {
 	 * @return the subscription
 	 * @throws ExcepcionesPayU the excepciones pay U
 	 */
-	public Subscription updateSubscriptionCreditCard(SuscripcionDto suscripcion) throws ExcepcionesPayU;
+	public Subscription updateSubscriptionCreditCard(SuscripcionDto suscripcion) throws ExceptionPayU;
 
 	/**
 	 * See subscription.
@@ -72,7 +72,7 @@ public interface ISuscripciones {
 	 * @return the subscription
 	 * @throws ExcepcionesPayU the excepciones pay U
 	 */
-	public Subscription seeSubscription(String subscriptionId) throws ExcepcionesPayU;
+	public Subscription seeSubscription(String subscriptionId) throws ExceptionPayU;
 	//Ojo con esta puede no funcionar correctamente hay que comprobarla que si liste todo lo propio.
 	/**
 	 * See all subscriptions.
@@ -80,7 +80,7 @@ public interface ISuscripciones {
 	 * @return the list
 	 * @throws ExcepcionesPayU the excepciones pay U
 	 */
-	public List<Subscription> seeAllSubscriptions() throws ExcepcionesPayU;
+	public List<Subscription> seeAllSubscriptions() throws ExceptionPayU;
 
 	/**
 	 * See all subscription by plan.
@@ -89,7 +89,7 @@ public interface ISuscripciones {
 	 * @return the list
 	 * @throws ExcepcionesPayU the excepciones pay U
 	 */
-	public List<Subscription> seeAllSubscriptionByPlan(String planId) throws ExcepcionesPayU;
+	public List<Subscription> seeAllSubscriptionByPlan(String planId) throws ExceptionPayU;
 
 	/**
 	 * See all subscription by customer.
@@ -98,7 +98,7 @@ public interface ISuscripciones {
 	 * @return the list
 	 * @throws ExcepcionesPayU the excepciones pay U
 	 */
-	public List<Subscription> seeAllSubscriptionByCustomer(String customerId) throws ExcepcionesPayU;
+	public List<Subscription> seeAllSubscriptionByCustomer(String customerId) throws ExceptionPayU;
 
 	/**
 	 * Delete subscription.
@@ -107,5 +107,5 @@ public interface ISuscripciones {
 	 * @return true, if successful
 	 * @throws ExcepcionesPayU the excepciones pay U
 	 */
-	public boolean deleteSubscription(String subscriptionId) throws ExcepcionesPayU;
+	public boolean deleteSubscription(String subscriptionId) throws ExceptionPayU;
 }

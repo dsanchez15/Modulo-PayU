@@ -5,7 +5,7 @@ package co.payU.interfaces;
 
 import com.payu.sdk.paymentplan.model.SubscriptionPlan;
 
-import co.excepciones.ExcepcionesPayU;
+import co.desarrollo.exception.ExceptionPayU;
 import co.payU.dto.PlanDto;
 
 /**
@@ -24,7 +24,7 @@ public interface IPlanes {
 	 * @return the subscription plan
 	 * @throws ExcepcionesPayU the excepciones pay U
 	 */
-	public SubscriptionPlan  createPlan(PlanDto plan) throws ExcepcionesPayU;
+	public SubscriptionPlan  createPlan(PlanDto plan) throws ExceptionPayU;
 
 	/**
 	 * Update plan.
@@ -33,7 +33,7 @@ public interface IPlanes {
 	 * @return the subscription plan
 	 * @throws ExcepcionesPayU the excepciones pay U
 	 */
-	public SubscriptionPlan  updatePlan(PlanDto plan) throws ExcepcionesPayU;
+	public SubscriptionPlan  updatePlan(PlanDto plan) throws ExceptionPayU;
 
 	/**
 	 * See plan.
@@ -42,7 +42,7 @@ public interface IPlanes {
 	 * @return the subscription plan
 	 * @throws ExcepcionesPayU the excepciones pay U
 	 */
-	public SubscriptionPlan  seePlan(String planCode) throws ExcepcionesPayU;
+	public SubscriptionPlan  seePlan(String planCode) throws ExceptionPayU;
 
 	/**
 	 * Delete plan.
@@ -51,5 +51,5 @@ public interface IPlanes {
 	 * @return true, if successful
 	 * @throws ExcepcionesPayU the excepciones pay U
 	 */
-	public boolean deletePlan(String planCode) throws ExcepcionesPayU;
+	public boolean deletePlan(String planCode) throws ExceptionPayU;
 }
